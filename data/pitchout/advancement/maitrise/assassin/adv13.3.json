@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": {
+            "text": "ASSASSIN : rang 3",
+            "color": "dark_red",
+            "bold": true
+        },
+        "description": {
+            "text": "gagner 10 parties avec un assassin",
+            "color": "red",
+            "bold": false
+        },
+        "icon": {
+            "item": "minecraft:black_dye"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "scoreboard_trigger": {
+            "trigger": "minecraft:impossible"
+          }
+    },
+    "rewards": {
+        "function": "minecraft:achievements/recompences/rang3"
+    },
+    "parent": "pitchout:maitrise/assassin/adv13.2"
+}

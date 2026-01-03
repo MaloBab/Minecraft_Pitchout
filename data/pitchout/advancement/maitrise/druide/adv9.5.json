@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": {
+            "text": "DRUIDE : rang 5",
+            "color": "green",
+            "bold": true
+        },
+        "description": {
+            "text": "gagner 25 parties avec un druide",
+            "color": "dark_purple",
+            "bold": false
+        },
+        "icon": {
+            "item": "minecraft:vine"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "scoreboard_trigger": {
+            "trigger": "minecraft:impossible"
+          }
+    },
+    "rewards": {
+        "experience": 20010
+    },
+    "parent": "pitchout:maitrise/druide/adv9.4"
+}

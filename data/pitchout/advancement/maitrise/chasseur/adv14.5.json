@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": {
+            "text": "CHASSEUR DE GROS GIBIER : rang 5",
+            "color": "#0A5C2D",
+            "bold": true
+        },
+        "description": {
+            "text": "gagner 25 parties avec un chasseur de gros gibier",
+            "color": "dark_purple",
+            "bold": false
+        },
+        "icon": {
+            "item": "minecraft:beef"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "scoreboard_trigger": {
+            "trigger": "minecraft:impossible"
+          }
+    },
+    "rewards": {
+        "experience": 20010
+    },
+    "parent": "pitchout:maitrise/chasseur/adv14.4"
+}

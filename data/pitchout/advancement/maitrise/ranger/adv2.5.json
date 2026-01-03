@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": {
+            "text": "RANGER : rang 5",
+            "color": "dark_gray",
+            "bold": true
+        },
+        "description": {
+            "text": "gagner 25 parties avec un ranger",
+            "color": "dark_purple",
+            "bold": false
+        },
+        "icon": {
+            "item": "minecraft:lead"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "scoreboard_trigger": {
+            "trigger": "minecraft:impossible"
+          }
+    },
+    "rewards": {
+        "experience": 20010
+    },
+    "parent": "pitchout:maitrise/ranger/adv2.4"
+}

@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": {
+            "text": "ASSASSIN : rang 4",
+            "color": "dark_red",
+            "bold": true
+        },
+        "description": {
+            "text": "gagner 15 parties avec un assassin",
+            "color": "light_purple",
+            "bold": false
+        },
+        "icon": {
+            "item": "minecraft:black_dye"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "scoreboard_trigger": {
+            "trigger": "minecraft:impossible"
+          }
+    },
+    "rewards": {
+        "function": "minecraft:achievements/recompences/rang4"
+    },
+    "parent": "pitchout:maitrise/assassin/adv13.3"
+}

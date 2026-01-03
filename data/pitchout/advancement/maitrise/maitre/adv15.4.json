@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": {
+            "text": "MAITRE MIROIR : rang 4",
+            "color": "gray",
+            "bold": true
+        },
+        "description": {
+            "text": "gagner 15 parties avec un maitre miroir",
+            "color": "light_purple",
+            "bold": false
+        },
+        "icon": {
+            "item": "minecraft:clock"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "scoreboard_trigger": {
+            "trigger": "minecraft:impossible"
+          }
+    },
+    "rewards": {
+        "function": "minecraft:achievements/recompences/rang4"
+    },
+    "parent": "pitchout:maitrise/maitre/adv15.3"
+}

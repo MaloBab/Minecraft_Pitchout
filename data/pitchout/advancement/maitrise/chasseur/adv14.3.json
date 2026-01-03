@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": {
+            "text": "CHASSEUR DE GROS GIBIER : rang 3",
+            "color": "#0A5C2D",
+            "bold": true
+        },
+        "description": {
+            "text": "gagner 10 parties avec un chasseur de gros gibier",
+            "color": "red",
+            "bold": false
+        },
+        "icon": {
+            "item": "minecraft:beef"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "scoreboard_trigger": {
+            "trigger": "minecraft:impossible"
+          }
+    },
+    "rewards": {
+        "function": "minecraft:achievements/recompences/rang3"
+    },
+    "parent": "pitchout:maitrise/chasseur/adv14.2"
+}

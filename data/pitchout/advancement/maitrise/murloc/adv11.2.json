@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": {
+            "text": "MURLOC : rang 2",
+            "color": "#55FF00",
+            "bold": true
+        },
+        "description": {
+            "text": "gagner 5 parties avec un murloc",
+            "color": "green",
+            "bold": false
+        },
+        "icon": {
+            "item": "minecraft:slime_ball"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "scoreboard_trigger": {
+            "trigger": "minecraft:impossible"
+          }
+    },
+    "rewards": {
+        "function": "minecraft:achievements/recompences/rang2"
+      },
+    "parent": "pitchout:maitrise/murloc/adv11"
+}

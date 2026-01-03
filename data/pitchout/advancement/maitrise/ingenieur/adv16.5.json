@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": {
+            "text": "INGENIEUR : rang 5",
+            "color": "#F41378",
+            "bold": true
+        },
+        "description": {
+            "text": "gagner 25 parties avec un ingénieur",
+            "color": "dark_purple",
+            "bold": false
+        },
+        "icon": {
+            "item": "minecraft:redstone"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "scoreboard_trigger": {
+            "trigger": "minecraft:impossible"
+          }
+    },
+    "rewards": {
+        "experience": 20010
+    },
+    "parent": "pitchout:maitrise/ingenieur/adv16.4"
+}

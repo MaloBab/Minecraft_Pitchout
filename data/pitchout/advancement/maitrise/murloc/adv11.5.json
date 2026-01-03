@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": {
+            "text": "MURLOC : rang 5",
+            "color": "#55FF00",
+            "bold": true
+        },
+        "description": {
+            "text": "gagner 25 parties avec un murloc",
+            "color": "dark_purple",
+            "bold": false
+        },
+        "icon": {
+            "item": "minecraft:slime_ball"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "scoreboard_trigger": {
+            "trigger": "minecraft:impossible"
+          }
+    },
+    "rewards": {
+        "experience": 20010
+    },
+    "parent": "pitchout:maitrise/murloc/adv11.4"
+}

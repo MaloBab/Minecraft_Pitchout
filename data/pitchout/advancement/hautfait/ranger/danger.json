@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": {
+            "text": "Du danger ? Quel danger ? I",
+            "color": "light_purple",
+            "bold": false
+        },
+        "description": {
+            "text": "gagner une partie sans utiliser d'ender pearl 5 fois",
+            "color": "white",
+            "bold": false
+        },
+        "icon": {
+            "item": "minecraft:ender_pearl"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "scoreboard_trigger": {
+            "trigger": "minecraft:impossible"
+          }
+    },
+    "rewards": {
+        "function": "minecraft:achievements/recompences/advniv2"
+    },
+    "parent": "pitchout:hautfait/ranger/rootranger"
+}

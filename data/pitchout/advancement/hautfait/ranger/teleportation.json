@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": {
+            "text": "Teleportation !",
+            "color": "aqua",
+            "bold": false
+        },
+        "description": {
+            "text": "Lancer 200 ender pearl",
+            "color": "white",
+            "bold": false
+        },
+        "icon": {
+            "item": "minecraft:ender_pearl"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "scoreboard_trigger": {
+            "trigger": "minecraft:impossible"
+          }
+    },
+    "rewards": {
+        "function": "minecraft:achievements/recompences/advniv1"
+    },
+    "parent": "pitchout:hautfait/ranger/rootranger"
+}

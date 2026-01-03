@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": {
+            "text": "PITCHOUT : Maitrise",
+            "color": "gray",
+            "bold": true
+        },
+        "description": {
+            "text": "Démontre votre habilité avec les différents kits",
+            "color": "green",
+            "bold": false,
+            "italic": false
+        },
+        "icon": {
+            "item": "minecraft:wooden_shovel",
+            "nbt": "{Enchantments:[{id:\"minecraft:knockback\",lvl:10}]}"
+            
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false,
+        "background": "minecraft:textures/block/sandstone.png"
+    },
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

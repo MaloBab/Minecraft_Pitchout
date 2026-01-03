@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": {
+            "text": "MAGE : rang 1",
+            "color": "aqua",
+            "bold": true
+        },
+        "description": {
+            "text": "gagner 1 partie avec un mage",
+            "color": "aqua",
+            "bold": false
+        },
+        "icon": {
+            "item": "minecraft:brewing_stand"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "scoreboard_trigger": {
+            "trigger": "minecraft:impossible"
+          }
+    },
+    "rewards": {
+        "function": "minecraft:achievements/recompences/rang1"
+      },
+    "parent": "pitchout:maitrise/adv1"
+}

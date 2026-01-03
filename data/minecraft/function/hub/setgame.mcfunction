@@ -1,0 +1,200 @@
+execute as @a[scores={setGame=1}] run scoreboard players set @s air 0
+
+execute as @s[scores={setGame=1}] run gamerule announceAdvancements false
+execute as @s[scores={setGame=1}] run advancement grant @s through minecraft:adventure/root
+execute as @s[scores={setGame=1}] run advancement grant @s through minecraft:end/root
+execute as @s[scores={setGame=1}] run advancement grant @s through minecraft:husbandry/root
+execute as @s[scores={setGame=1}] run advancement grant @s through minecraft:story/root
+execute as @s[scores={setGame=1}] run advancement grant @s through minecraft:nether/root
+execute as @s[scores={setGame=1}] run advancement revoke @s through pitchout:maitrise/root
+execute as @s[scores={setGame=1}] run advancement revoke @s through pitchout:hautfait/root
+
+
+
+
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s vicpartieJoue 0
+
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s menumap 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s hunt 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s timeHunt 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s inversDestin 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s storeGrav 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s glasDivin 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s comptarba 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s comptPortal 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s multibow 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s RageS 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s cthunEye 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s mareenoire 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s map1b 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s map2b 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s map3b 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s map4b 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s modenderP0 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s modenderP1 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s modenderP2 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s modenderP3 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s modenderP4 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s equipEnder 1
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s cosRanger 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s cosForestier 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s advDudanger 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s modLasso0 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s modLasso1 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s cosRangerG 1
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s modenderP0 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s equipEnderSon 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s equipLassoSon 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s equipLasso 1
+
+
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s advBarroud 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s enderpearlPartie 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s enderpearlGlobal 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s vicRanger 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s vicRanger 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s vicForestier 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s vicMage 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s vicGuerrier 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s vicNecro 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s vicChevalier 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s vicChaman 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s vicDruide 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s vicFantome 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s vicMurloc 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s vicBatisseur 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s vicAssassin 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s vicCGG 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s vicMaitreM 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s vicIngenieur 0
+
+
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s algue 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s cosmeticmenu 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s arti 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s bois 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s bouclier 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s chaman 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s changeKit 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s charge 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s cheval 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s chevalier 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s cible 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s clock 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s coins 0
+execute as @a[team=hub,scores={setGame=1}] run scoreboard players set @s setGame 2
+execute as @a[team=hub,scores={setGame=2}] run scoreboard players set @s controle 0
+execute as @a[team=hub,scores={setGame=2}] run scoreboard players set @s creeper 0
+execute as @a[team=hub,scores={setGame=2}] run scoreboard players set @s deco 0
+execute as @a[team=hub,scores={setGame=2}] run scoreboard players set @s DetectMort 0
+execute as @a[team=hub,scores={setGame=2}] run scoreboard players set @s encre 0
+execute as @a[team=hub,scores={setGame=2}] run scoreboard players set @s familier 0
+execute as @a[team=hub,scores={setGame=2}] run scoreboard players set @s fant 0
+execute as @a[team=hub,scores={setGame=2}] run scoreboard players set @s diamant 0
+execute as @a[team=hub,scores={setGame=2}] run scoreboard players set @s druide 0
+execute as @a[team=hub,scores={setGame=2}] run scoreboard players set @s fantome 0
+execute as @a[team=hub,scores={setGame=2}] run scoreboard players set @s fantomeK 0
+execute as @a[team=hub,scores={setGame=2}] run scoreboard players set @s fer 0
+execute as @a[team=hub,scores={setGame=2}] run scoreboard players set @s fishing 0
+execute as @a[team=hub,scores={setGame=2}] run scoreboard players set @s lancer 0
+execute as @a[team=hub,scores={setGame=2}] run scoreboard players set @s enderVoid 0
+execute as @a[team=hub,scores={setGame=2}] run scoreboard players set @s sauvetage 0
+execute as @a[team=hub,scores={setGame=2}] run scoreboard players set @s setGame 3
+execute as @a[team=hub,scores={setGame=3}] run scoreboard players set @s forestier 0
+execute as @a[team=hub,scores={setGame=3}] run scoreboard players set @s guerrier 0
+execute as @a[team=hub,scores={setGame=3}] run scoreboard players set @s intangibilite 0
+execute as @a[team=hub,scores={setGame=3}] run scoreboard players set @s invocation 0
+execute as @a[team=hub,scores={setGame=3}] run scoreboard players set @s invul 0
+execute as @a[team=hub,scores={setGame=3}] run scoreboard players set @s kit 0
+execute as @a[team=hub,scores={setGame=3}] run scoreboard players set @s levi 0
+execute as @a[team=hub,scores={setGame=3}] run scoreboard players set @s mage 0
+execute as @a[team=hub,scores={setGame=3}] run scoreboard players set @s menu 0
+execute as @a[team=hub,scores={setGame=3}] run scoreboard players set @s mort 0
+execute as @a[team=hub,scores={setGame=3}] run scoreboard players set @s necromancien 0
+execute as @a[team=hub,scores={setGame=3}] run scoreboard players set @s setGame 4
+execute as @a[team=hub,scores={setGame=4}] run scoreboard players set @s nether 0
+execute as @a[team=hub,scores={setGame=4}] run scoreboard players set @s or 0
+execute as @a[team=hub,scores={setGame=4}] run scoreboard players set @s pelle0 2
+execute as @a[team=hub,scores={setGame=4}] run scoreboard players set @s pelle1 0
+execute as @a[team=hub,scores={setGame=4}] run scoreboard players set @s pelle2 0
+execute as @a[team=hub,scores={setGame=4}] run scoreboard players set @s pelle3 0
+execute as @a[team=hub,scores={setGame=4}] run scoreboard players set @s pelle4 0
+execute as @a[team=hub,scores={setGame=4}] run scoreboard players set @s pelle5 0
+execute as @a[team=hub,scores={setGame=4}] run scoreboard players set @s pierre 0
+execute as @a[team=hub,scores={setGame=4}] run scoreboard players set @s play 0
+execute as @a[team=hub,scores={setGame=4}] run scoreboard players set @s lienGOD 0
+execute as @a[team=hub,scores={setGame=4}] run scoreboard players set @s timeLien 0
+execute as @a[team=hub,scores={setGame=4}] run scoreboard players set @s PlayerTimer 0
+execute as @a[team=hub,scores={setGame=4}] run scoreboard players set @s protect 0
+execute as @a[team=hub,scores={setGame=4}] run scoreboard players set @s grav 0
+execute as @a[team=hub,scores={setGame=4}] run scoreboard players set @s Cfleche 0
+execute as @a[team=hub,scores={setGame=4}] run scoreboard players set @s setGame 5
+execute as @a[team=hub,scores={setGame=5}] run scoreboard players set @s puissance 0
+execute as @a[team=hub,scores={setGame=5}] run scoreboard players set @s racine 0
+execute as @a[team=hub,scores={setGame=5}] run scoreboard players set @s ranger 0
+execute as @a[team=hub,scores={setGame=5}] run scoreboard players set @s rocket 0
+execute as @a[team=hub,scores={setGame=5}] run scoreboard players set @s skull 0
+execute as @a[team=hub,scores={setGame=5}] run scoreboard players set @s raltime 0
+execute as @a[team=hub,scores={setGame=5}] run scoreboard players set @s timeCharge 0
+execute as @a[team=hub,scores={setGame=5}] run scoreboard players set @s timeCible 0
+execute as @a[team=hub,scores={setGame=5}] run scoreboard players set @s timeClock 0
+execute as @a[team=hub,scores={setGame=5}] run scoreboard players set @s timeCont 0
+execute as @a[team=hub,scores={setGame=5}] run scoreboard players set @s timeProtect 0
+execute as @a[team=hub,scores={setGame=5}] run scoreboard players set @s timePuissance 0
+execute as @a[team=hub,scores={setGame=5}] run scoreboard players set @s victoires 0
+execute as @a[team=hub,scores={setGame=5}] run scoreboard players set @s setGame 6
+execute as @a[team=hub,scores={setGame=6}] run scoreboard players set @s timer 0
+execute as @a[team=hub,scores={setGame=6}] run scoreboard players set @s timeRac 0
+execute as @a[team=hub,scores={setGame=6}] run scoreboard players set @s timeTotem 0
+execute as @a[team=hub,scores={setGame=6}] run scoreboard players set @s titre 0
+execute as @a[team=hub,scores={setGame=6}] run scoreboard players set @s totem 0
+execute as @a[team=hub,scores={setGame=6}] run scoreboard players set @s tp 0
+execute as @a[team=hub,scores={setGame=6}] run scoreboard players set @s victoire 0
+execute as @a[team=hub,scores={setGame=6}] run scoreboard players set @s vie 6
+execute as @a[team=hub,scores={setGame=6}] run scoreboard players set @s QTB 0
+execute as @a[team=hub,scores={setGame=6}] run scoreboard players set @s void 0
+execute as @a[team=hub,scores={setGame=6}] run scoreboard players set @s gel 0
+execute as @a[team=hub,scores={setGame=6}] run scoreboard players set @s timeRaz 0
+execute as @a[team=hub,scores={setGame=6}] run scoreboard players set @s timeTox 0
+execute as @a[team=hub,scores={setGame=6}] run scoreboard players set @s timePeau 0
+execute as @a[team=hub,scores={setGame=6}] run scoreboard players set @s setGame 7
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s crossbow 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s TimeM1 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s TimeM2 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s TimeM3 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s TimeM4 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s timeMirror 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s mirroir 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s contrat 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s murloc 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s batisseur 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s assassinK 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s chasseurGG 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s MaitreM 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s ingenieur 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s pieces 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s achatInge 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s aimant 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s huile 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s ingenieur 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s lifeTourelle 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s mine 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s nbPlan1 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s nbPlan2 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s nbPlan3 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s nbPlan4 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s nbPlan5 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s nbPlan6 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s piegehuile 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s plan 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s PoseTourelle 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s Repulseur 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s timeVision 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s TimeTourelle 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s TourelleP 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s Vision 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s watersource 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s aggroNaga 0
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s armeeNaga 0
+execute as @a[scores={setGame=7}] run gamerule announceAdvancements true
+execute as @a[team=hub,scores={setGame=7}] run scoreboard players set @s setGame 8

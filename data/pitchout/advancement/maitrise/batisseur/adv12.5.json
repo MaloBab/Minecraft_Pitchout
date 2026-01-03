@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": {
+            "text": "BATISSEUR : rang 5",
+            "color": "#663300",
+            "bold": true
+        },
+        "description": {
+            "text": "gagner 25 parties avec un batisseur",
+            "color": "dark_purple",
+            "bold": false
+        },
+        "icon": {
+            "item": "minecraft:bricks"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "scoreboard_trigger": {
+            "trigger": "minecraft:impossible"
+          }
+    },
+    "rewards": {
+        "experience": 20010
+    },
+    "parent": "pitchout:maitrise/batisseur/adv12.4"
+}

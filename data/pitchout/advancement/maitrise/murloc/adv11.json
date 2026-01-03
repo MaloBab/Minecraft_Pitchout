@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": {
+            "text": "MURLOC : rang 1",
+            "color": "#55FF00",
+            "bold": true
+        },
+        "description": {
+            "text": "gagner 1 partie avec un murloc",
+            "color": "aqua",
+            "bold": false
+        },
+        "icon": {
+            "item": "minecraft:slime_ball"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "scoreboard_trigger": {
+            "trigger": "minecraft:impossible"
+          }
+    },
+    "rewards": {
+        "function": "minecraft:achievements/recompences/rang1"
+      },
+    "parent": "pitchout:maitrise/adv1"
+}
