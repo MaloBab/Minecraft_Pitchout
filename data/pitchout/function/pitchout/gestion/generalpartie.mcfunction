@@ -1,13 +1,13 @@
 
-execute as @e run execute store result score @s couche run data get entity @s Pos[1] 1
+execute as @e run execute store result score @s po.tech.layer run data get entity @s Pos[1] 1
 
 
 #point de spawn
 
-execute if score select map matches 1 run spawnpoint @a[scores={vie=5}] 24 16 7
-execute if score select map matches 2 run spawnpoint @a[scores={vie=5}] 596 46 83
-execute if score select map matches 3 run spawnpoint @a[scores={vie=5}] 1572 46 108
-execute if score select map matches 4 run spawnpoint @a[scores={vie=5}] 465 65 -297
+execute if score select po.map.vote_id matches 1 run spawnpoint @a[scores={po.tech.remaining_lives=5}] 24 16 7
+execute if score select po.map.vote_id matches 2 run spawnpoint @a[scores={po.tech.remaining_lives=5}] 596 46 83
+execute if score select po.map.vote_id matches 3 run spawnpoint @a[scores={po.tech.remaining_lives=5}] 1572 46 108
+execute if score select po.map.vote_id matches 4 run spawnpoint @a[scores={po.tech.remaining_lives=5}] 465 65 -297
 title @a times 0 80 0
 
 #---------------------------------------------------------
@@ -20,99 +20,98 @@ kill @e[type=minecraft:arrow,nbt={inGround:1b},tag=!mouv,tag=!Vis,tag=!Bar,tag=!
 
 #ajout role de base
 
-execute if score select map matches 1 run execute positioned 0 0 0 run team join ranger @a[distance=..200,team=hub,scores={ranger=0,forestier=0,mage=0,guerrier=0,necromancien=0,chevalier=0,chaman=0,druide=0,fantomeK=0,batisseur=0,murloc=0,assassinK=0,chasseurGG=0,MaitreM=0,ingenieur=0}]
-execute if score select map matches 2 run execute positioned 596 46 83 run team join ranger @a[distance=..120,team=hub,scores={ranger=0,forestier=0,mage=0,guerrier=0,necromancien=0,chevalier=0,chaman=0,druide=0,fantomeK=0,batisseur=0,murloc=0,assassinK=0,chasseurGG=0,MaitreM=0,ingenieur=0}]
-execute if score select map matches 3 run execute positioned 1572 46 108 run team join ranger @a[distance=..200,team=hub,scores={ranger=0,forestier=0,mage=0,guerrier=0,necromancien=0,chevalier=0,chaman=0,druide=0,fantomeK=0,batisseur=0,murloc=0,assassinK=0,chasseurGG=0,MaitreM=0,ingenieur=0}]
-execute if score select map matches 4 run execute positioned 465 65 -297 run team join ranger @a[distance=..200,team=hub,scores={ranger=0,forestier=0,mage=0,guerrier=0,necromancien=0,chevalier=0,chaman=0,druide=0,fantomeK=0,batisseur=0,murloc=0,assassinK=0,chasseurGG=0,MaitreM=0,ingenieur=0}]
+execute if score select po.map.vote_id matches 1 run execute positioned 0 0 0 run team join ranger @a[distance=..200,team=hub,scores={po.kit.ranger=0,po.kit.forestier=0,po.kit.mage=0,po.kit.guerrier=0,po.kit.necromancien=0,po.kit.chevalier=0,po.kit.chaman=0,po.kit.druide=0,po.kit.fantome=0,po.kit.batisseur=0,po.kit.murloc=0,po.kit.assassin=0,po.kit.chasseurgg=0,po.kit.maitrem=0,po.kit.ingenieur=0}]
+execute if score select po.map.vote_id matches 2 run execute positioned 596 46 83 run team join ranger @a[distance=..120,team=hub,scores={po.kit.ranger=0,po.kit.forestier=0,po.kit.mage=0,po.kit.guerrier=0,po.kit.necromancien=0,po.kit.chevalier=0,po.kit.chaman=0,po.kit.druide=0,po.kit.fantome=0,po.kit.batisseur=0,po.kit.murloc=0,po.kit.assassin=0,po.kit.chasseurgg=0,po.kit.maitrem=0,po.kit.ingenieur=0}]
+execute if score select po.map.vote_id matches 3 run execute positioned 1572 46 108 run team join ranger @a[distance=..200,team=hub,scores={po.kit.ranger=0,po.kit.forestier=0,po.kit.mage=0,po.kit.guerrier=0,po.kit.necromancien=0,po.kit.chevalier=0,po.kit.chaman=0,po.kit.druide=0,po.kit.fantome=0,po.kit.batisseur=0,po.kit.murloc=0,po.kit.assassin=0,po.kit.chasseurgg=0,po.kit.maitrem=0,po.kit.ingenieur=0}]
+execute if score select po.map.vote_id matches 4 run execute positioned 465 65 -297 run team join ranger @a[distance=..200,team=hub,scores={po.kit.ranger=0,po.kit.forestier=0,po.kit.mage=0,po.kit.guerrier=0,po.kit.necromancien=0,po.kit.chevalier=0,po.kit.chaman=0,po.kit.druide=0,po.kit.fantome=0,po.kit.batisseur=0,po.kit.murloc=0,po.kit.assassin=0,po.kit.chasseurgg=0,po.kit.maitrem=0,po.kit.ingenieur=0}]
 
 #---------------------------------------------------------
 
 #ajout team
-execute if score select map matches 1 run execute positioned 0 0 0 run team join ranger @a[distance=..200,team=hub,scores={ranger=1}]
-execute if score select map matches 1 run execute positioned 0 0 0 run team join forestier @a[distance=..200,team=hub,scores={forestier=1}]
-execute if score select map matches 1 run execute positioned 0 0 0 run team join mage @a[distance=..200,team=hub,scores={mage=1}]
-execute if score select map matches 1 run execute positioned 0 0 0 run team join guerrier @a[distance=..200,team=hub,scores={guerrier=1}]
-execute if score select map matches 1 run execute positioned 0 0 0 run team join necromancien @a[distance=..200,team=hub,scores={necromancien=1}]
-execute if score select map matches 1 run execute positioned 0 0 0 run team join chevalier @a[distance=..200,team=hub,scores={chevalier=1}]
-execute if score select map matches 1 run execute positioned 0 0 0 run team join chaman @a[distance=..200,team=hub,scores={chaman=1}]
-execute if score select map matches 1 run execute positioned 0 0 0 run team join druide @a[distance=..200,team=hub,scores={druide=1}]
-execute if score select map matches 1 run execute positioned 0 0 0 run team join fantome @a[distance=..200,team=hub,scores={fantomeK=1}]
-execute if score select map matches 1 run execute positioned 0 0 0 run team join murloc @a[distance=..200,team=hub,scores={murloc=1}]
-execute if score select map matches 1 run execute positioned 0 0 0 run team join batisseur @a[distance=..200,team=hub,scores={batisseur=1}]
-execute if score select map matches 1 run execute positioned 0 0 0 run team join assassin @a[distance=..200,team=hub,scores={assassinK=1}]
-execute if score select map matches 1 run execute positioned 0 0 0 run team join Chasseur @a[distance=..200,team=hub,scores={chasseurGG=1}]
-execute if score select map matches 1 run execute positioned 0 0 0 run team join GOD @a[distance=..200,team=hub,scores={MaitreM=1}]
-execute if score select map matches 1 run execute positioned 0 0 0 run team join ingenieur @a[distance=..200,team=hub,scores={ingenieur=1}]
+execute if score select po.map.vote_id matches 1 run execute positioned 0 0 0 run team join ranger @a[distance=..200,team=hub,scores={po.kit.ranger=1}]
+execute if score select po.map.vote_id matches 1 run execute positioned 0 0 0 run team join forestier @a[distance=..200,team=hub,scores={po.kit.forestier=1}]
+execute if score select po.map.vote_id matches 1 run execute positioned 0 0 0 run team join mage @a[distance=..200,team=hub,scores={po.kit.mage=1}]
+execute if score select po.map.vote_id matches 1 run execute positioned 0 0 0 run team join guerrier @a[distance=..200,team=hub,scores={po.kit.guerrier=1}]
+execute if score select po.map.vote_id matches 1 run execute positioned 0 0 0 run team join necromancien @a[distance=..200,team=hub,scores={po.kit.necromancien=1}]
+execute if score select po.map.vote_id matches 1 run execute positioned 0 0 0 run team join chevalier @a[distance=..200,team=hub,scores={po.kit.chevalier=1}]
+execute if score select po.map.vote_id matches 1 run execute positioned 0 0 0 run team join chaman @a[distance=..200,team=hub,scores={po.kit.chaman=1}]
+execute if score select po.map.vote_id matches 1 run execute positioned 0 0 0 run team join druide @a[distance=..200,team=hub,scores={po.kit.druide=1}]
+execute if score select po.map.vote_id matches 1 run execute positioned 0 0 0 run team join fantome @a[distance=..200,team=hub,scores={po.kit.fantome=1}]
+execute if score select po.map.vote_id matches 1 run execute positioned 0 0 0 run team join murloc @a[distance=..200,team=hub,scores={po.kit.murloc=1}]
+execute if score select po.map.vote_id matches 1 run execute positioned 0 0 0 run team join batisseur @a[distance=..200,team=hub,scores={po.kit.batisseur=1}]
+execute if score select po.map.vote_id matches 1 run execute positioned 0 0 0 run team join assassin @a[distance=..200,team=hub,scores={po.kit.assassin=1}]
+execute if score select po.map.vote_id matches 1 run execute positioned 0 0 0 run team join Chasseur @a[distance=..200,team=hub,scores={po.kit.chasseurgg=1}]
+execute if score select po.map.vote_id matches 1 run execute positioned 0 0 0 run team join GOD @a[distance=..200,team=hub,scores={po.kit.maitrem=1}]
+execute if score select po.map.vote_id matches 1 run execute positioned 0 0 0 run team join ingenieur @a[distance=..200,team=hub,scores={po.kit.ingenieur=1}]
 
 
-execute if score select map matches 2 run execute positioned 596 46 83 run team join ranger @a[distance=..80,team=hub,scores={ranger=1}]
-execute if score select map matches 2 run execute positioned 596 46 83 run team join forestier @a[distance=..80,team=hub,scores={forestier=1}]
-execute if score select map matches 2 run execute positioned 596 46 83 run team join mage @a[distance=..80,team=hub,scores={mage=1}]
-execute if score select map matches 2 run execute positioned 596 46 83 run team join guerrier @a[distance=..80,team=hub,scores={guerrier=1}]
-execute if score select map matches 2 run execute positioned 596 46 83 run team join necromancien @a[distance=..80,team=hub,scores={necromancien=1}]
-execute if score select map matches 2 run execute positioned 596 46 83 run team join chevalier @a[distance=..80,team=hub,scores={chevalier=1}]
-execute if score select map matches 2 run execute positioned 596 46 83 run team join chaman @a[distance=..80,team=hub,scores={chaman=1}]
-execute if score select map matches 2 run execute positioned 596 46 83 run team join druide @a[distance=..80,team=hub,scores={druide=1}]
-execute if score select map matches 2 run execute positioned 596 46 83 run team join fantome @a[distance=..80,team=hub,scores={fantomeK=1}]
-execute if score select map matches 2 run execute positioned 596 46 83 run team join murloc @a[distance=..80,team=hub,scores={murloc=1}]
-execute if score select map matches 2 run execute positioned 596 46 83 run team join batisseur @a[distance=..80,team=hub,scores={batisseur=1}]
-execute if score select map matches 2 run execute positioned 596 46 83 run team join assassin @a[distance=..80,team=hub,scores={assassinK=1}]
-execute if score select map matches 2 run execute positioned 596 46 83 run team join Chasseur @a[distance=..80,team=hub,scores={chasseurGG=1}]
-execute if score select map matches 2 run execute positioned 596 46 83 run team join GOD @a[distance=..80,team=hub,scores={MaitreM=1}]
-execute if score select map matches 2 run execute positioned 596 46 83 run team join ingenieur @a[distance=..80,team=hub,scores={ingenieur=1}]
+execute if score select po.map.vote_id matches 2 run execute positioned 596 46 83 run team join ranger @a[distance=..80,team=hub,scores={po.kit.ranger=1}]
+execute if score select po.map.vote_id matches 2 run execute positioned 596 46 83 run team join forestier @a[distance=..80,team=hub,scores={po.kit.forestier=1}]
+execute if score select po.map.vote_id matches 2 run execute positioned 596 46 83 run team join mage @a[distance=..80,team=hub,scores={po.kit.mage=1}]
+execute if score select po.map.vote_id matches 2 run execute positioned 596 46 83 run team join guerrier @a[distance=..80,team=hub,scores={po.kit.guerrier=1}]
+execute if score select po.map.vote_id matches 2 run execute positioned 596 46 83 run team join necromancien @a[distance=..80,team=hub,scores={po.kit.necromancien=1}]
+execute if score select po.map.vote_id matches 2 run execute positioned 596 46 83 run team join chevalier @a[distance=..80,team=hub,scores={po.kit.chevalier=1}]
+execute if score select po.map.vote_id matches 2 run execute positioned 596 46 83 run team join chaman @a[distance=..80,team=hub,scores={po.kit.chaman=1}]
+execute if score select po.map.vote_id matches 2 run execute positioned 596 46 83 run team join druide @a[distance=..80,team=hub,scores={po.kit.druide=1}]
+execute if score select po.map.vote_id matches 2 run execute positioned 596 46 83 run team join fantome @a[distance=..80,team=hub,scores={po.kit.fantome=1}]
+execute if score select po.map.vote_id matches 2 run execute positioned 596 46 83 run team join murloc @a[distance=..80,team=hub,scores={po.kit.murloc=1}]
+execute if score select po.map.vote_id matches 2 run execute positioned 596 46 83 run team join batisseur @a[distance=..80,team=hub,scores={po.kit.batisseur=1}]
+execute if score select po.map.vote_id matches 2 run execute positioned 596 46 83 run team join assassin @a[distance=..80,team=hub,scores={po.kit.assassin=1}]
+execute if score select po.map.vote_id matches 2 run execute positioned 596 46 83 run team join Chasseur @a[distance=..80,team=hub,scores={po.kit.chasseurgg=1}]
+execute if score select po.map.vote_id matches 2 run execute positioned 596 46 83 run team join GOD @a[distance=..80,team=hub,scores={po.kit.maitrem=1}]
+execute if score select po.map.vote_id matches 2 run execute positioned 596 46 83 run team join ingenieur @a[distance=..80,team=hub,scores={po.kit.ingenieur=1}]
 
 
-execute if score select map matches 3 run execute positioned 1572 46 108 run team join ranger @a[distance=..200,team=hub,scores={ranger=1}]
-execute if score select map matches 3 run execute positioned 1572 46 108 run team join forestier @a[distance=..200,team=hub,scores={forestier=1}]
-execute if score select map matches 3 run execute positioned 1572 46 108 run team join mage @a[distance=..200,team=hub,scores={mage=1}]
-execute if score select map matches 3 run execute positioned 1572 46 108 run team join guerrier @a[distance=..200,team=hub,scores={guerrier=1}]
-execute if score select map matches 3 run execute positioned 1572 46 108 run team join necromancien @a[distance=..200,team=hub,scores={necromancien=1}]
-execute if score select map matches 3 run execute positioned 1572 46 108 run team join chevalier @a[distance=..200,team=hub,scores={chevalier=1}]
-execute if score select map matches 3 run execute positioned 1572 46 108 run team join chaman @a[distance=..200,team=hub,scores={chaman=1}]
-execute if score select map matches 3 run execute positioned 1572 46 108 run team join druide @a[distance=..200,team=hub,scores={druide=1}]
-execute if score select map matches 3 run execute positioned 1572 46 108 run team join fantome @a[distance=..200,team=hub,scores={fantomeK=1}]
-execute if score select map matches 3 run execute positioned 1572 46 108 run team join murloc @a[distance=..200,team=hub,scores={murloc=1}]
-execute if score select map matches 3 run execute positioned 1572 46 108 run team join batisseur @a[distance=..200,team=hub,scores={batisseur=1}]
-execute if score select map matches 3 run execute positioned 1572 46 108 run team join assassin @a[distance=..200,team=hub,scores={assassinK=1}]
-execute if score select map matches 3 run execute positioned 1572 46 108 run team join Chasseur @a[distance=..200,team=hub,scores={chasseurGG=1}]
-execute if score select map matches 3 run execute positioned 1572 46 108 run team join GOD @a[distance=..200,team=hub,scores={MaitreM=1}]
-execute if score select map matches 3 run execute positioned 1572 46 108 run team join ingenieur @a[distance=..200,team=hub,scores={ingenieur=1}]
+execute if score select po.map.vote_id matches 3 run execute positioned 1572 46 108 run team join ranger @a[distance=..200,team=hub,scores={po.kit.ranger=1}]
+execute if score select po.map.vote_id matches 3 run execute positioned 1572 46 108 run team join forestier @a[distance=..200,team=hub,scores={po.kit.forestier=1}]
+execute if score select po.map.vote_id matches 3 run execute positioned 1572 46 108 run team join mage @a[distance=..200,team=hub,scores={po.kit.mage=1}]
+execute if score select po.map.vote_id matches 3 run execute positioned 1572 46 108 run team join guerrier @a[distance=..200,team=hub,scores={po.kit.guerrier=1}]
+execute if score select po.map.vote_id matches 3 run execute positioned 1572 46 108 run team join necromancien @a[distance=..200,team=hub,scores={po.kit.necromancien=1}]
+execute if score select po.map.vote_id matches 3 run execute positioned 1572 46 108 run team join chevalier @a[distance=..200,team=hub,scores={po.kit.chevalier=1}]
+execute if score select po.map.vote_id matches 3 run execute positioned 1572 46 108 run team join chaman @a[distance=..200,team=hub,scores={po.kit.chaman=1}]
+execute if score select po.map.vote_id matches 3 run execute positioned 1572 46 108 run team join druide @a[distance=..200,team=hub,scores={po.kit.druide=1}]
+execute if score select po.map.vote_id matches 3 run execute positioned 1572 46 108 run team join fantome @a[distance=..200,team=hub,scores={po.kit.fantome=1}]
+execute if score select po.map.vote_id matches 3 run execute positioned 1572 46 108 run team join murloc @a[distance=..200,team=hub,scores={po.kit.murloc=1}]
+execute if score select po.map.vote_id matches 3 run execute positioned 1572 46 108 run team join batisseur @a[distance=..200,team=hub,scores={po.kit.batisseur=1}]
+execute if score select po.map.vote_id matches 3 run execute positioned 1572 46 108 run team join assassin @a[distance=..200,team=hub,scores={po.kit.assassin=1}]
+execute if score select po.map.vote_id matches 3 run execute positioned 1572 46 108 run team join Chasseur @a[distance=..200,team=hub,scores={po.kit.chasseurgg=1}]
+execute if score select po.map.vote_id matches 3 run execute positioned 1572 46 108 run team join GOD @a[distance=..200,team=hub,scores={po.kit.maitrem=1}]
+execute if score select po.map.vote_id matches 3 run execute positioned 1572 46 108 run team join ingenieur @a[distance=..200,team=hub,scores={po.kit.ingenieur=1}]
 
 
-execute if score select map matches 4 run execute positioned 465 65 -297 run team join ranger @a[distance=..200,team=hub,scores={ranger=1}]
-execute if score select map matches 4 run execute positioned 465 65 -297 run team join forestier @a[distance=..200,team=hub,scores={forestier=1}]
-execute if score select map matches 4 run execute positioned 465 65 -297 run team join mage @a[distance=..200,team=hub,scores={mage=1}]
-execute if score select map matches 4 run execute positioned 465 65 -297 run team join guerrier @a[distance=..200,team=hub,scores={guerrier=1}]
-execute if score select map matches 4 run execute positioned 465 65 -297 run team join necromancien @a[distance=..200,team=hub,scores={necromancien=1}]
-execute if score select map matches 4 run execute positioned 465 65 -297 run team join chevalier @a[distance=..200,team=hub,scores={chevalier=1}]
-execute if score select map matches 4 run execute positioned 465 65 -297 run team join chaman @a[distance=..200,team=hub,scores={chaman=1}]
-execute if score select map matches 4 run execute positioned 465 65 -297 run team join druide @a[distance=..200,team=hub,scores={druide=1}]
-execute if score select map matches 4 run execute positioned 465 65 -297 run team join fantome @a[distance=..200,team=hub,scores={fantomeK=1}]
-execute if score select map matches 4 run execute positioned 465 65 -297 run team join murloc @a[distance=..200,team=hub,scores={murloc=1}]
-execute if score select map matches 4 run execute positioned 465 65 -297 run team join batisseur @a[distance=..200,team=hub,scores={batisseur=1}]
-execute if score select map matches 4 run execute positioned 465 65 -297 run team join assassin @a[distance=..200,team=hub,scores={assassinK=1}]
-execute if score select map matches 4 run execute positioned 465 65 -297 run team join Chasseur @a[distance=..200,team=hub,scores={chasseurGG=1}]
-execute if score select map matches 4 run execute positioned 465 65 -297 run team join GOD @a[distance=..200,team=hub,scores={MaitreM=1}]
-execute if score select map matches 4 run execute positioned 465 65 -297 run team join ingenieur @a[distance=..200,team=hub,scores={ingenieur=1}]
+execute if score select po.map.vote_id matches 4 run execute positioned 465 65 -297 run team join ranger @a[distance=..200,team=hub,scores={po.kit.ranger=1}]
+execute if score select po.map.vote_id matches 4 run execute positioned 465 65 -297 run team join forestier @a[distance=..200,team=hub,scores={po.kit.forestier=1}]
+execute if score select po.map.vote_id matches 4 run execute positioned 465 65 -297 run team join mage @a[distance=..200,team=hub,scores={po.kit.mage=1}]
+execute if score select po.map.vote_id matches 4 run execute positioned 465 65 -297 run team join guerrier @a[distance=..200,team=hub,scores={po.kit.guerrier=1}]
+execute if score select po.map.vote_id matches 4 run execute positioned 465 65 -297 run team join necromancien @a[distance=..200,team=hub,scores={po.kit.necromancien=1}]
+execute if score select po.map.vote_id matches 4 run execute positioned 465 65 -297 run team join chevalier @a[distance=..200,team=hub,scores={po.kit.chevalier=1}]
+execute if score select po.map.vote_id matches 4 run execute positioned 465 65 -297 run team join chaman @a[distance=..200,team=hub,scores={po.kit.chaman=1}]
+execute if score select po.map.vote_id matches 4 run execute positioned 465 65 -297 run team join druide @a[distance=..200,team=hub,scores={po.kit.druide=1}]
+execute if score select po.map.vote_id matches 4 run execute positioned 465 65 -297 run team join fantome @a[distance=..200,team=hub,scores={po.kit.fantome=1}]
+execute if score select po.map.vote_id matches 4 run execute positioned 465 65 -297 run team join murloc @a[distance=..200,team=hub,scores={po.kit.murloc=1}]
+execute if score select po.map.vote_id matches 4 run execute positioned 465 65 -297 run team join batisseur @a[distance=..200,team=hub,scores={po.kit.batisseur=1}]
+execute if score select po.map.vote_id matches 4 run execute positioned 465 65 -297 run team join assassin @a[distance=..200,team=hub,scores={po.kit.assassin=1}]
+execute if score select po.map.vote_id matches 4 run execute positioned 465 65 -297 run team join Chasseur @a[distance=..200,team=hub,scores={po.kit.chasseurgg=1}]
+execute if score select po.map.vote_id matches 4 run execute positioned 465 65 -297 run team join GOD @a[distance=..200,team=hub,scores={po.kit.maitrem=1}]
+execute if score select po.map.vote_id matches 4 run execute positioned 465 65 -297 run team join ingenieur @a[distance=..200,team=hub,scores={po.kit.ingenieur=1}]
 
 #---------------------------------------------------------
 #reinitialisation scores de selections
-scoreboard players set @a[team=!hub] ranger 0
-scoreboard players set @a[team=!hub] forestier 0
-scoreboard players set @a[team=!hub] mage 0
-scoreboard players set @a[team=!hub] guerrier 0
-scoreboard players set @a[team=!hub] necromancien 0
-scoreboard players set @a[team=!hub] chevalier 0
-scoreboard players set @a[team=!hub] chaman 0
-scoreboard players set @a[team=!hub] druide 0
-scoreboard players set @a[team=!hub] fantomeK 0
-scoreboard players set @a[team=!hub] murloc 0
-scoreboard players set @a[team=!hub] batisseur 0
-scoreboard players set @a[team=!hub] assassinK 0
-scoreboard players set @a[team=!hub] chasseurGG 0
-scoreboard players set @a[team=!hub] MaitreM 0
-scoreboard players set @a[team=!hub] ingenieur 0
-
+scoreboard players set @a[team=!hub] po.kit.ranger 0
+scoreboard players set @a[team=!hub] po.kit.forestier 0
+scoreboard players set @a[team=!hub] po.kit.mage 0
+scoreboard players set @a[team=!hub] po.kit.guerrier 0
+scoreboard players set @a[team=!hub] po.kit.necromancien 0
+scoreboard players set @a[team=!hub] po.kit.chevalier 0
+scoreboard players set @a[team=!hub] po.kit.chaman 0
+scoreboard players set @a[team=!hub] po.kit.druide 0
+scoreboard players set @a[team=!hub] po.kit.fantome 0
+scoreboard players set @a[team=!hub] po.kit.murloc 0
+scoreboard players set @a[team=!hub] po.kit.batisseur 0
+scoreboard players set @a[team=!hub] po.kit.assassin 0
+scoreboard players set @a[team=!hub] po.kit.chasseurgg 0
+scoreboard players set @a[team=!hub] po.kit.maitrem 0
+scoreboard players set @a[team=!hub] po.kit.ingenieur 0
 #---------------------------------------------------------
 #statistiques phisiques des roles
 
@@ -125,10 +124,10 @@ effect give @a[team=mage] minecraft:speed 99999 3 true
 effect give @a[team=guerrier] minecraft:speed 99999 2 true
 effect give @a[team=necromancien] minecraft:speed 99999 3 true
 
-effect give @a[team=chevalier,scores={vie=2..}] minecraft:speed 99999 3 true
-effect give @a[team=chevalier,scores={vie=1}] minecraft:speed 99999 5 true
-effect give @a[team=chevalier,scores={vie=1}] minecraft:glowing 99999 3 true
-effect clear @a[team=chevalier,scores={vie=2..}] minecraft:glowing
+effect give @a[team=chevalier,scores={po.tech.remaining_lives=2..}] minecraft:speed 99999 3 true
+effect give @a[team=chevalier,scores={po.tech.remaining_lives=1}] minecraft:speed 99999 5 true
+effect give @a[team=chevalier,scores={po.tech.remaining_lives=1}] minecraft:glowing 99999 3 true
+effect clear @a[team=chevalier,scores={po.tech.remaining_lives=2..}] minecraft:glowing
 
 effect give @a[team=chaman] minecraft:speed 99999 2 true
 effect give @a[team=druide] minecraft:speed 99999 3 true
@@ -142,31 +141,29 @@ effect give @a[team=ingenieur] minecraft:speed 99999 3 true
 #--------------------------------------------------------------
 #un demi gigot de nourriture manquant
 
-execute as @a[scores={food=20}] run effect give @s minecraft:hunger 1 250 true
-execute as @a[scores={food=..18}] run effect give @s minecraft:saturation 1 0 true
+execute as @a[scores={po.tech.food=20}] run effect give @s minecraft:hunger 1 250 true
+execute as @a[scores={po.tech.food=..18}] run effect give @s minecraft:saturation 1 0 true
 
 #--------------------------------------------------------------
 #scoreboard par kits
 
-scoreboard players set @a[team=!ranger] fishing 0
-scoreboard players set @a[team=!ranger] PlayerTimer 0
-scoreboard players set @a[team=!forestier] familier 0
-scoreboard players set @a[team=!mage] levi 0
-scoreboard players set @a[team=!mage] creeper 0
-scoreboard players set @a[team=!guerrier] bouclier 0
-scoreboard players set @a[team=!guerrier] arti 0
-scoreboard players set @a[team=!guerrier] invul 0
-scoreboard players set @a[team=!guerrier] rocket 0
-
+scoreboard players set @a[team=!ranger] po.use.rod 0
+scoreboard players set @a[team=!ranger] po.timer.playertimer 0
+scoreboard players set @a[team=!forestier] po.use.familiar 0
+scoreboard players set @a[team=!mage] po.use.levitation 0
+scoreboard players set @a[team=!mage] po.legacy.creeper 0
+scoreboard players set @a[team=!guerrier] po.use.shield_cookie 0
+scoreboard players set @a[team=!guerrier] po.use.crossbow_arti 0
+scoreboard players set @a[team=!guerrier] po.tech.invulnerable 0
+scoreboard players set @a[team=!guerrier] po.legacy.rocket 0
 #--------------------------------------------------------------
 #affichage nombre de vie + gestion inventaire
 
-execute as @a[scores={vie=5}] run item replace entity @s hotbar.8 with minecraft:redstone 5
-execute as @a[scores={vie=4}] run item replace entity @s hotbar.8 with minecraft:redstone 4
-execute as @a[scores={vie=3}] run item replace entity @s hotbar.8 with minecraft:redstone 3
-execute as @a[scores={vie=2}] run item replace entity @s hotbar.8 with minecraft:redstone 2
-execute as @a[scores={vie=1}] run item replace entity @s hotbar.8 with minecraft:redstone 1
-
+execute as @a[scores={po.tech.remaining_lives=5}] run item replace entity @s hotbar.8 with minecraft:redstone 5
+execute as @a[scores={po.tech.remaining_lives=4}] run item replace entity @s hotbar.8 with minecraft:redstone 4
+execute as @a[scores={po.tech.remaining_lives=3}] run item replace entity @s hotbar.8 with minecraft:redstone 3
+execute as @a[scores={po.tech.remaining_lives=2}] run item replace entity @s hotbar.8 with minecraft:redstone 2
+execute as @a[scores={po.tech.remaining_lives=1}] run item replace entity @s hotbar.8 with minecraft:redstone 1
 
 execute as @a[team=!hub] run item replace entity @s container.17 with minecraft:arrow 1
 clear @a[team=!hub] minecraft:written_book

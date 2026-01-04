@@ -485,12 +485,12 @@ scoreboard players set Browis po.model.pelle0 2
 # timeBlock -> po.timer.block (dummy)
 scoreboard objectives add po.timer.block dummy
 scoreboard players set timer po.timer.block 0
-# food -> po.use.food (food)
-scoreboard objectives add po.use.food food
-scoreboard players set Babiblaster po.use.food 20
-scoreboard players set Archibald po.use.food 20
-scoreboard players set Askepios po.use.food 19
-scoreboard players set Browis po.use.food 19
+# food -> po.tech.food (food)
+scoreboard objectives add po.tech.food food
+scoreboard players set Babiblaster po.tech.food 20
+scoreboard players set Archibald po.tech.food 20
+scoreboard players set Askepios po.tech.food 19
+scoreboard players set Browis po.tech.food 19
 # timeCharge -> po.cd.charge (dummy)
 scoreboard objectives add po.cd.charge dummy
 scoreboard players set Babiblaster po.cd.charge 0
@@ -941,10 +941,10 @@ scoreboard players set Babiblaster po.use.ender_pearl 0
 scoreboard players set Archibald po.use.ender_pearl 0
 scoreboard players set Askepios po.use.ender_pearl 0
 scoreboard players set Browis po.use.ender_pearl 0
-# timeObjA -> po.cd.obj_a (dummy)
-scoreboard objectives add po.cd.obj_a dummy
-scoreboard players set timer po.cd.obj_a 0
-scoreboard players set hotel po.cd.obj_a 0
+# timeObjA -> po.cd.obj_angelique (dummy)
+scoreboard objectives add po.cd.obj_angelique dummy
+scoreboard players set timer po.cd.obj_angelique 0
+scoreboard players set hotel po.cd.obj_angelique 0
 # diamant -> po.shovel.diamond (dummy)
 scoreboard objectives add po.shovel.diamond dummy
 scoreboard players set Babiblaster po.shovel.diamond 0
@@ -1119,8 +1119,8 @@ scoreboard players set Babiblaster po.cos.rangerg 1
 scoreboard players set Archibald po.cos.rangerg 1
 scoreboard players set Askepios po.cos.rangerg 1
 scoreboard players set Browis po.cos.rangerg 1
-# peau -> po.use.skin (minecraft.used:minecraft.netherite_scrap)
-scoreboard objectives add po.use.skin minecraft.used:minecraft.netherite_scrap
+# peau -> po.use.peau (minecraft.used:minecraft.netherite_scrap)
+scoreboard objectives add po.use.peau minecraft.used:minecraft.netherite_scrap
 # air -> po.use.air (minecraft.used:minecraft.feather)
 scoreboard objectives add po.use.air minecraft.used:minecraft.feather
 scoreboard players set Babiblaster po.use.air 0

@@ -18,5 +18,6 @@ team add chaman {"text":" Chaman ","color":"#87CEEB"}
 team add druide {"text":" Druide ","color":"#006400"}
 team add fantome {"text":" Fantôme ","color":"#D3D3D3"}
 team add murloc {"text":" Murloc ","color":"#00008B"}
-team add maitrem {"text":" Maître M ","color":"#B22222"}
+team add GOD {"text":" Maître M ","color":"#B22222"}
 team add Chasseur {"text":" Chasseur ","color":"#8B4513"}
+team add naga {"text":" Naga ","color":"#4682B4"}

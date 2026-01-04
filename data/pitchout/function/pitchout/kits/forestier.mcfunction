@@ -3,25 +3,25 @@ clear @a glass_bottle
 execute at @e[type=bee] run execute as @a[distance=..7,gamemode=adventure] run effect give @s minecraft:slowness 2 2
 execute at @e[type=bee] run execute as @a[distance=..7,gamemode=adventure] run effect give @s minecraft:nausea 9
 
-execute at @a[team=forestier,scores={familier=2..}] run execute at @a[limit=1,scores={familier=0},gamemode=adventure,sort=random] run summon minecraft:bee ~4 ~1 ~1 {Health:15,Glowing:1b,Silent:1b,active_effects:[{id:wither,duration:-1,amplifier:1,show_particles:0b}],attributes:[{id:"generic.knockback_resistance",base:0.8f},{id:"generic.max_health",base:15f}]}
-execute as @a[team=forestier,scores={familier=2..}] run scoreboard players set @s familier 0
+execute at @a[team=forestier,scores={po.use.familiar=2..}] run execute at @a[limit=1,scores={po.use.familiar=0},gamemode=adventure,sort=random] run summon minecraft:bee ~4 ~1 ~1 {Health:15,Glowing:1b,Silent:1b,active_effects:[{id:wither,duration:-1,amplifier:1,show_particles:0b}],attributes:[{id:"generic.knockback_resistance",base:0.8f},{id:"generic.max_health",base:15f}]}
+execute as @a[team=forestier,scores={po.use.familiar=2..}] run scoreboard players set @s po.use.familiar 0
 
 #pas de l'ombre
-execute as @a[scores={tp=1..}] run tag @s add tp
-execute if entity @a[scores={tp=1..}] run execute as @r[scores={tp=0},gamemode=adventure,limit=1] run tag @s add tp
+execute as @a[scores={po.use.spyglass_tp=1..}] run tag @s add tp
+execute if entity @a[scores={po.use.spyglass_tp=1..}] run execute as @r[scores={po.use.spyglass_tp=0},gamemode=adventure,limit=1] run tag @s add tp
 execute at @a[tag=tp] run particle minecraft:dragon_breath ~ ~ ~ 0.5 1.1 0.5 0.05 50 force
-execute if score select map matches 1 run execute if entity @a[scores={tp=1..}] run spreadplayers 6.55 12.44 9 50 false @a[tag=tp,limit=2]
-execute if score select map matches 2 run execute if entity @a[scores={tp=1..}] run spreadplayers 587 96 5 30 false @a[tag=tp,limit=2]
-execute if score select map matches 3 run execute if entity @a[scores={tp=1..}] run spreadplayers 1572 108 5 40 false @a[tag=tp,limit=2]
-execute if score select map matches 4 run execute if entity @a[scores={tp=1..}] run spreadplayers 465 -297 5 40 false @a[tag=tp,limit=2]
+execute if score select po.map.vote_id matches 1 run execute if entity @a[scores={po.use.spyglass_tp=1..}] run spreadplayers 6.55 12.44 9 50 false @a[tag=tp,limit=2]
+execute if score select po.map.vote_id matches 2 run execute if entity @a[scores={po.use.spyglass_tp=1..}] run spreadplayers 587 96 5 30 false @a[tag=tp,limit=2]
+execute if score select po.map.vote_id matches 3 run execute if entity @a[scores={po.use.spyglass_tp=1..}] run spreadplayers 1572 108 5 40 false @a[tag=tp,limit=2]
+execute if score select po.map.vote_id matches 4 run execute if entity @a[scores={po.use.spyglass_tp=1..}] run spreadplayers 465 -297 5 40 false @a[tag=tp,limit=2]
 
-execute as @a[scores={tp=1..}] run clear @s minecraft:spyglass
-execute if entity @a[scores={tp=1..}] run execute as @a[tag=tp] run tag @s remove tp
-execute as @a[scores={tp=1..}] run scoreboard players set @s tp 0
+execute as @a[scores={po.use.spyglass_tp=1..}] run clear @s minecraft:spyglass
+execute if entity @a[scores={po.use.spyglass_tp=1..}] run execute as @a[tag=tp] run tag @s remove tp
+execute as @a[scores={po.use.spyglass_tp=1..}] run scoreboard players set @s po.use.spyglass_tp 0
 
-#multibow
-execute as @a[scores={multibow=1}] run item replace entity @s hotbar.1 with minecraft:bow[minecraft:lore=['[{"text":"Le premier à l avoir utiliser","color":"dark_purple"}]','[{"text":"n a pas compris le principe,","color":"dark_purple"}]','[{"text":"il a frappé son adversaire et","color":"dark_purple"}]','[{"text":"ça a fait","color":"dark_purple"}]','[{"text":"VLAN !!!","color":"dark_red"}]','[{"text":"D où le nom de l arc en fait...","color":"aqua"}]'],minecraft:enchantments={levels:{"minecraft:infinity":1,"minecraft:punch":12,"minecraft:multishot":3},show_in_tooltip:0b},minecraft:unbreakable={},minecraft:custom_name='[{"text":"VLAN amélioré !!!","color":"dark_green","bold":true},{"text":"","color":"dark_purple","bold":false}]',minecraft:hide_additional_tooltip={}] 1
-execute as @a[scores={multibow=1..}] run scoreboard players add @s multibow 1
-execute at @a[scores={multibow=1..}] run particle happy_villager ~ ~2.5 ~ 0 0 0 0.03 1 force @a
-execute as @a[scores={multibow=200..}] run item replace entity @s hotbar.1 with minecraft:bow[minecraft:lore=['[{"text":"Le premier à l avoir utiliser","color":"dark_purple"}]','[{"text":"n a pas compris le principe,","color":"dark_purple"}]','[{"text":"il a frappé son adversaire et","color":"dark_purple"}]','[{"text":"ça a fait","color":"dark_purple"}]','[{"text":"VLAN !!!","color":"dark_red"}]','[{"text":"D où le nom de l arc en fait...","color":"aqua"}]'],minecraft:enchantments={levels:{"minecraft:infinity":1,"minecraft:punch":12},show_in_tooltip:0b},minecraft:unbreakable={},minecraft:custom_name='[{"text":"VLAN !!!","color":"dark_purple","bold":true},{"text":"","color":"dark_purple","bold":false}]',minecraft:hide_additional_tooltip={}] 1
-execute as @a[scores={multibow=200..}] run scoreboard players set @s multibow 0
+#po.use.bow_multi
+execute as @a[scores={po.use.bow_multi=1}] run item replace entity @s hotbar.1 with minecraft:bow[minecraft:lore=['[{"text":"Le premier à l avoir utiliser","color":"dark_purple"}]','[{"text":"n a pas compris le principe,","color":"dark_purple"}]','[{"text":"il a frappé son adversaire et","color":"dark_purple"}]','[{"text":"ça a fait","color":"dark_purple"}]','[{"text":"VLAN !!!","color":"dark_red"}]','[{"text":"D où le nom de l arc en fait...","color":"aqua"}]'],minecraft:enchantments={levels:{"minecraft:infinity":1,"minecraft:punch":12,"minecraft:multishot":3},show_in_tooltip:0b},minecraft:unbreakable={},minecraft:custom_name='[{"text":"VLAN amélioré !!!","color":"dark_green","bold":true},{"text":"","color":"dark_purple","bold":false}]',minecraft:hide_additional_tooltip={}] 1
+execute as @a[scores={po.use.bow_multi=1..}] run scoreboard players add @s po.use.bow_multi 1
+execute at @a[scores={po.use.bow_multi=1..}] run particle happy_villager ~ ~2.5 ~ 0 0 0 0.03 1 force @a
+execute as @a[scores={po.use.bow_multi=200..}] run item replace entity @s hotbar.1 with minecraft:bow[minecraft:lore=['[{"text":"Le premier à l avoir utiliser","color":"dark_purple"}]','[{"text":"n a pas compris le principe,","color":"dark_purple"}]','[{"text":"il a frappé son adversaire et","color":"dark_purple"}]','[{"text":"ça a fait","color":"dark_purple"}]','[{"text":"VLAN !!!","color":"dark_red"}]','[{"text":"D où le nom de l arc en fait...","color":"aqua"}]'],minecraft:enchantments={levels:{"minecraft:infinity":1,"minecraft:punch":12},show_in_tooltip:0b},minecraft:unbreakable={},minecraft:custom_name='[{"text":"VLAN !!!","color":"dark_purple","bold":true},{"text":"","color":"dark_purple","bold":false}]',minecraft:hide_additional_tooltip={}] 1
+execute as @a[scores={po.use.bow_multi=200..}] run scoreboard players set @s po.use.bow_multi 0
