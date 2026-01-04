@@ -1,9 +1,0 @@
-{
-	"values":["minecraft:pitchout/gestion/generalpartie","minecraft:pitchout/gestion/gestioncolis","minecraft:pitchout/gestion/gestiontempete","minecraft:pitchout/gestion/gestionvictoire","minecraft:pitchout/gestion/systememort"
-	,"minecraft:pitchout/kits/distributionkitspelles","minecraft:pitchout/kits/assassin","minecraft:pitchout/kits/batisseur","minecraft:pitchout/kits/chaman","minecraft:pitchout/kits/chasseur","minecraft:pitchout/kits/chevalier"
-	,"minecraft:pitchout/kits/druide","minecraft:pitchout/kits/fantome","minecraft:pitchout/kits/forestier","minecraft:pitchout/kits/guerrier","minecraft:pitchout/kits/ingenieur"
-	,"minecraft:pitchout/kits/mage","minecraft:pitchout/kits/maitremirroir","minecraft:pitchout/kits/murloc","minecraft:pitchout/kits/ranger","minecraft:pitchout/kits/necromancien","minecraft:pitchout/gestion/gestionevent2","minecraft:pitchout/kits/naga",
-	"minecraft:pitchout/gestion/gestionobjet","minecraft:pitchout/gestion/gestionevent3"
-
-]
-}

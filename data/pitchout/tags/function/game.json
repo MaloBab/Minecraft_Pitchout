@@ -1,0 +1,9 @@
+{
+	"values":["pitchout:pitchout/gestion/generalpartie","pitchout:pitchout/gestion/gestioncolis","pitchout:pitchout/gestion/gestiontempete","pitchout:pitchout/gestion/gestionvictoire","pitchout:pitchout/gestion/systememort"
+	,"pitchout:pitchout/kits/distributionkitspelles","pitchout:pitchout/kits/assassin","pitchout:pitchout/kits/batisseur","pitchout:pitchout/kits/chaman","pitchout:pitchout/kits/chasseur","pitchout:pitchout/kits/chevalier"
+	,"pitchout:pitchout/kits/druide","pitchout:pitchout/kits/fantome","pitchout:pitchout/kits/forestier","pitchout:pitchout/kits/guerrier","pitchout:pitchout/kits/ingenieur"
+	,"pitchout:pitchout/kits/mage","pitchout:pitchout/kits/maitremirroir","pitchout:pitchout/kits/murloc","pitchout:pitchout/kits/ranger","pitchout:pitchout/kits/necromancien","pitchout:pitchout/gestion/gestionevent2","pitchout:pitchout/kits/naga",
+	"pitchout:pitchout/gestion/gestionobjet","pitchout:pitchout/gestion/gestionevent3"
+
+]
+}
