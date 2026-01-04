@@ -341,12 +341,12 @@ scoreboard players set Babiblaster po.legacy.detectmort 0
 scoreboard players set Archibald po.legacy.detectmort 0
 scoreboard players set Askepios po.legacy.detectmort 0
 scoreboard players set Browis po.legacy.detectmort 0
-# play -> po.trigger.play (trigger)
-scoreboard objectives add po.trigger.play trigger
-scoreboard players set Babiblaster po.trigger.play 0
-scoreboard players set Archibald po.trigger.play 0
-scoreboard players set Askepios po.trigger.play 0
-scoreboard players set Browis po.trigger.play 0
+# play -> play (trigger)
+scoreboard objectives add play trigger
+scoreboard players set Babiblaster play 0
+scoreboard players set Archibald play 0
+scoreboard players set Askepios play 0
+scoreboard players set Browis play 0
 # timeRaz -> po.cd.raz (dummy)
 scoreboard objectives add po.cd.raz dummy
 scoreboard players set Babiblaster po.cd.raz 0
@@ -1348,7 +1348,6 @@ scoreboard objectives remove pierre
 scoreboard objectives remove Cfleche
 scoreboard objectives remove crossbow
 scoreboard objectives remove DetectMort
-scoreboard objectives remove play
 scoreboard objectives remove timeRaz
 scoreboard objectives remove equipEnder
 scoreboard objectives remove chasseurGG

@@ -9,34 +9,34 @@ execute as @a[scores={trident=1..}] run scoreboard players set @s trident 0
 execute as @e[type=trident] at @s on origin run ride @s[scores={couche=44..}] mount @e[type=trident,limit=1,sort=nearest]
 execute as @e[type=trident,scores={couche=..43}] run kill @s
 
-execute as @e[type=pitchout:trident,nbt={OnGround:1b}] run kill @s
-execute as @e[type=pitchout:trident,scores={trident=1..}] run kill @s
+execute as @e[type=minecraft:trident,nbt={OnGround:1b}] run kill @s
+execute as @e[type=minecraft:trident,scores={trident=1..}] run kill @s
 
 #-----------------------------------------------------------------------
 #Armée des profondeurs
 
 execute if entity @a[team=naga,scores={armeeNaga=1..}] as @r[scores={armeeNaga=0},tag=!mort,limit=1] run tag @s add CibleArmee
-execute as @a[tag=CibleArmee] at @e[type=area_effect_cloud,tag=nb,tag=water] run summon pitchout:zombified_piglin ~ ~0.3 ~ {Tags:["aggro"],AngryAt:[I;0,0,0,0],AngerTime:2147483646}
+execute as @a[tag=CibleArmee] at @e[type=area_effect_cloud,tag=nb,tag=water] run summon minecraft:zombified_piglin ~ ~0.3 ~ {Tags:["aggro"],AngryAt:[I;0,0,0,0],AngerTime:2147483646}
 execute as @a[team=naga,scores={armeeNaga=1..}] run scoreboard players set @s armeeNaga 0
 
-execute as @e[type=zombified_piglin] run attribute @s pitchout:generic.attack_speed base set 140
-execute as @e[type=zombified_piglin] run attribute @s pitchout:generic.movement_speed base set 0.25
-execute as @e[type=zombified_piglin] run attribute @s pitchout:generic.follow_range base set 120
-execute as @e[type=zombified_piglin] run attribute @s pitchout:generic.attack_knockback base set 5
-execute as @e[type=zombified_piglin] run attribute @s pitchout:generic.knockback_resistance base set 0.11
+execute as @e[type=zombified_piglin] run attribute @s minecraft:generic.attack_speed base set 140
+execute as @e[type=zombified_piglin] run attribute @s minecraft:generic.movement_speed base set 0.25
+execute as @e[type=zombified_piglin] run attribute @s minecraft:generic.follow_range base set 120
+execute as @e[type=zombified_piglin] run attribute @s minecraft:generic.attack_knockback base set 5
+execute as @e[type=zombified_piglin] run attribute @s minecraft:generic.knockback_resistance base set 0.11
 
-execute as @e[type=zombified_piglin] run item replace entity @s armor.head with pitchout:player_head[pitchout:profile={id:[I;-769678341,-878228468,-1464540480,-581630985],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGU0ZjNkZjNkNTNiY2EzNGI5YjA0YjI1ZGJiYjBlOTIwYmUwMGE3ZjkxYTExNzkwYjdhMjNmZDQ0MzZkMWQwYiJ9fX0="}]}] 1
-execute as @e[type=zombified_piglin] run item replace entity @s armor.chest with pitchout:diamond_chestplate
-execute as @e[type=zombified_piglin] run item replace entity @s armor.legs with pitchout:diamond_leggings
-execute as @e[type=zombified_piglin] run item replace entity @s armor.feet with pitchout:diamond_boots
+execute as @e[type=zombified_piglin] run item replace entity @s armor.head with minecraft:player_head[minecraft:profile={id:[I;-769678341,-878228468,-1464540480,-581630985],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGU0ZjNkZjNkNTNiY2EzNGI5YjA0YjI1ZGJiYjBlOTIwYmUwMGE3ZjkxYTExNzkwYjdhMjNmZDQ0MzZkMWQwYiJ9fX0="}]}] 1
+execute as @e[type=zombified_piglin] run item replace entity @s armor.chest with minecraft:diamond_chestplate
+execute as @e[type=zombified_piglin] run item replace entity @s armor.legs with minecraft:diamond_leggings
+execute as @e[type=zombified_piglin] run item replace entity @s armor.feet with minecraft:diamond_boots
 
 execute store result score @a[tag=CibleArmee] aggroNaga run random value 1..10000
 execute as @e[type=zombified_piglin,tag=aggro,limit=10,sort=arbitrary] store result score @s aggroNaga run scoreboard players get @a[tag=CibleArmee,limit=1,sort=arbitrary] aggroNaga
 
 
 
-execute if entity @a[tag=CibleArmee] as @e[type=pitchout:zombified_piglin,tag=aggro] store result entity @s AngryAt[0] int 1 run data get entity @a[tag=CibleArmee,limit=1,sort=arbitrary] UUID[0] 1
-execute if entity @a[tag=CibleArmee] as @e[type=pitchout:zombified_piglin,tag=aggro] store result entity @s AngryAt[1] int 1 run data get entity @a[tag=CibleArmee,limit=1,sort=arbitrary] UUID[1] 1
+execute if entity @a[tag=CibleArmee] as @e[type=minecraft:zombified_piglin,tag=aggro] store result entity @s AngryAt[0] int 1 run data get entity @a[tag=CibleArmee,limit=1,sort=arbitrary] UUID[0] 1
+execute if entity @a[tag=CibleArmee] as @e[type=minecraft:zombified_piglin,tag=aggro] store result entity @s AngryAt[1] int 1 run data get entity @a[tag=CibleArmee,limit=1,sort=arbitrary] UUID[1] 1
 execute if entity @a[tag=CibleArmee] as @e[type=zombified_piglin,tag=aggro] store result entity @s AngryAt[2] int 1 run data get entity @a[tag=CibleArmee,limit=1,sort=arbitrary] UUID[2] 1
 execute if entity @a[tag=CibleArmee] as @e[type=zombified_piglin,tag=aggro] store result entity @s AngryAt[3] int 1 run data get entity @a[tag=CibleArmee,limit=1,sort=arbitrary] UUID[3] 1
 execute if entity @a[tag=CibleArmee] as @e[type=zombified_piglin,tag=aggro,limit=10,sort=arbitrary] run tag @s remove aggro

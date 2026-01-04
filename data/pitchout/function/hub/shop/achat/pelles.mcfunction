@@ -1,11 +1,11 @@
 #initialisation des scores
 
-execute as @a[scores={po.ui.kit_menu=2},team=hub] store result score @s po.shovel.wood run clear @s pitchout:wooden_shovel
-execute as @a[scores={po.ui.kit_menu=2},team=hub] store result score @s po.shovel.stone run clear @s pitchout:stone_shovel
-execute as @a[scores={po.ui.kit_menu=2},team=hub] store result score @s po.shovel.iron run clear @s pitchout:iron_shovel
-execute as @a[scores={po.ui.kit_menu=2},team=hub] store result score @s po.shovel.gold run clear @s pitchout:golden_shovel
-execute as @a[scores={po.ui.kit_menu=2},team=hub] store result score @s po.shovel.diamond run clear @s pitchout:diamond_shovel
-execute as @a[scores={po.ui.kit_menu=2},team=hub] store result score @s po.shovel.netherite run clear @s pitchout:netherite_shovel
+execute as @a[scores={po.ui.kit_menu=2},team=hub] store result score @s po.shovel.wood run clear @s minecraft:wooden_shovel
+execute as @a[scores={po.ui.kit_menu=2},team=hub] store result score @s po.shovel.stone run clear @s minecraft:stone_shovel
+execute as @a[scores={po.ui.kit_menu=2},team=hub] store result score @s po.shovel.iron run clear @s minecraft:iron_shovel
+execute as @a[scores={po.ui.kit_menu=2},team=hub] store result score @s po.shovel.gold run clear @s minecraft:golden_shovel
+execute as @a[scores={po.ui.kit_menu=2},team=hub] store result score @s po.shovel.diamond run clear @s minecraft:diamond_shovel
+execute as @a[scores={po.ui.kit_menu=2},team=hub] store result score @s po.shovel.netherite run clear @s minecraft:netherite_shovel
 
 #----------------------------------------------------------------------
 #selection des pelles pour jeu

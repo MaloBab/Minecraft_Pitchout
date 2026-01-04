@@ -1,32 +1,33 @@
-# ==========================================
-# PITCHOUT - INITIALISATION (1.21)
-# ==========================================
+# ===============================================================
+# PITCHOUT - LOAD (Démarrage / Reload)
+# ===============================================================
 
-# 1. Message de confirmation console/admin
-tellraw @a[tag=admin] {"text":"[Pitchout] Datapack chargé/rechargé avec succès.","color":"green"}
+# 1. Feedback Console
+tellraw @a[tag=admin] {"text":"[Pitchout] Système chargé (v1.21).","color":"green"}
 
-# 2. Initialisation des teams si celles-ci n'existent pas
-function pitchout:init/teams
-
-# 3. Initialisation des Scoreboards Globaux (Convention de nommage stricte)
-# po.main : États du jeu, timers globaux
-scoreboard objectives add po.main dummy
-# po.stats : Statistiques joueurs (kills, morts, coins)
-scoreboard objectives add po.stats dummy
-# po.tech : Variables techniques temporaires (calculs)
-scoreboard objectives add po.tech dummy
-
-# 4. Initialisation des variables globales (Fake Players)
-# $gameState : 0 = Lobby, 1 = En jeu, 2 = Fin
-scoreboard players set $gameState po.main 0
-# $timer : Timer global pour le jeu
-scoreboard players set $globalTimer po.main 0
-
-# 5. Paramétrages de jeu (Gamerules)
+# 2. Règles de base (Gamerules)
 gamerule commandBlockOutput false
+gamerule sendCommandFeedback false
 gamerule logAdminCommands false
 gamerule doImmediateRespawn true
 gamerule keepInventory true
+gamerule doDaylightCycle false
+gamerule doWeatherCycle false
+# Pour éviter que les entités ne spawnent naturellement dans le hub
+gamerule doMobSpawning false 
 
-# 6. Lancer la boucle du Hub si le jeu n'est pas lancé
+# 3. Initialisation des Scoreboards Système
+# po.main : Gère l'état du jeu (0=Hub, 1=Jeu, 2=Fin)
+scoreboard objectives add po.main dummy
+# po.tech : Variables techniques temporaires
+scoreboard objectives add po.tech dummy
+
+# 4. Chargement des Teams (pour éviter les warnings VS Code)
+function pitchout:anti_warnings/teams
+
+# 5. Démarrage du Hub (Sécurité)
+# Si aucun état n'est défini (premier lancement), on force le Hub
+execute unless score $gameState po.main matches 0.. run scoreboard players set $gameState po.main 0
+
+# Si on est au Hub (0), on lance l'init du Hub pour tp les joueurs, etc.
 execute if score $gameState po.main matches 0 run function pitchout:hub/init

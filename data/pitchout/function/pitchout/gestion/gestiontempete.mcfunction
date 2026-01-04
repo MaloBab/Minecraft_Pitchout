@@ -14,30 +14,30 @@ execute if score timer timeEffect matches 3000.. run scoreboard players set time
 
 #applicatin des effets
 
-execute if score effet timeEffect matches 8 run effect give @a[team=!hub,tag=!mort] pitchout:slow_falling 30 3 true
+execute if score effet timeEffect matches 8 run effect give @a[team=!hub,tag=!mort] minecraft:slow_falling 30 3 true
 execute if score effet timeEffect matches 8 run tellraw @a[team=!hub] ["",{"text":"La tempête","bold":true,"color":"gold"},{"text":" vous donne ","bold":true,"color":"aqua"},{"text":"Chute Lente","bold":true,"color":"dark_green"},{"text":" pendant 30 secondes !","bold":true,"color":"aqua"}]
 
 
-execute if score effet timeEffect matches 7 run effect give @a[team=!hub,tag=!mort] pitchout:jump_boost 30 3 true
+execute if score effet timeEffect matches 7 run effect give @a[team=!hub,tag=!mort] minecraft:jump_boost 30 3 true
 execute if score effet timeEffect matches 7 run tellraw @a[team=!hub] ["",{"text":"La tempête","bold":true,"color":"gold"},{"text":" vous donne ","bold":true,"color":"aqua"},{"text":"Saut Amélioré","bold":true,"color":"dark_green"},{"text":" pendant 30 secondes !","bold":true,"color":"aqua"}]
 
 
-execute if score effet timeEffect matches 6 run effect give @a[tag=!mort,team=!hub] pitchout:glowing 30 2 true
+execute if score effet timeEffect matches 6 run effect give @a[tag=!mort,team=!hub] minecraft:glowing 30 2 true
 execute if score effet timeEffect matches 6 run tellraw @a[team=!hub] ["",{"text":"La tempête","bold":true,"color":"gold"},{"text":" vous donne ","bold":true,"color":"aqua"},{"text":"Surbrillance","bold":true,"color":"dark_green"},{"text":" pendant 30 secondes !","bold":true,"color":"aqua"}]
 
-execute if score effet timeEffect matches 5 run effect give @a[tag=!mort,team=!hub] pitchout:speed 30 8 true
+execute if score effet timeEffect matches 5 run effect give @a[tag=!mort,team=!hub] minecraft:speed 30 8 true
 execute if score effet timeEffect matches 5 run tellraw @a[team=!hub] ["",{"text":"La tempête","bold":true,"color":"gold"},{"text":" vous donne ","bold":true,"color":"aqua"},{"text":"Vitesse","bold":true,"color":"dark_green"},{"text":" pendant 30 secondes !","bold":true,"color":"aqua"}]
 
-execute if score effet timeEffect matches 4 run effect give @a[tag=!mort,team=!hub] pitchout:slowness 30 2 true
+execute if score effet timeEffect matches 4 run effect give @a[tag=!mort,team=!hub] minecraft:slowness 30 2 true
 execute if score effet timeEffect matches 4 run tellraw @a[team=!hub] ["",{"text":"La tempête","bold":true,"color":"gold"},{"text":" vous donne ","bold":true,"color":"aqua"},{"text":"Lenteur","bold":true,"color":"dark_red"},{"text":" pendant 30 secondes !","bold":true,"color":"aqua"}]
 
-execute if score effet timeEffect matches 3 run effect give @a[tag=!mort,team=!hub] pitchout:levitation 30 0 true
+execute if score effet timeEffect matches 3 run effect give @a[tag=!mort,team=!hub] minecraft:levitation 30 0 true
 execute if score effet timeEffect matches 3 run tellraw @a[team=!hub] ["",{"text":"La tempête","bold":true,"color":"gold"},{"text":" vous donne ","bold":true,"color":"aqua"},{"text":"Lévitation","bold":true,"color":"dark_red"},{"text":" pendant 30 secondes !","bold":true,"color":"aqua"}]
 
-execute if score effet timeEffect matches 2 run effect give @a[tag=!mort,team=!hub] pitchout:darkness 30 2 true
+execute if score effet timeEffect matches 2 run effect give @a[tag=!mort,team=!hub] minecraft:darkness 30 2 true
 execute if score effet timeEffect matches 2 run tellraw @a[team=!hub] ["",{"text":"La tempête","bold":true,"color":"gold"},{"text":" vous donne ","bold":true,"color":"aqua"},{"text":"Darkness","bold":true,"color":"dark_red"},{"text":" pendant 30 secondes !","bold":true,"color":"aqua"}]
 
-execute if score effet timeEffect matches 1 run effect give @a[tag=!mort,team=!hub] pitchout:nausea 30 2 true
+execute if score effet timeEffect matches 1 run effect give @a[tag=!mort,team=!hub] minecraft:nausea 30 2 true
 execute if score effet timeEffect matches 1 run tellraw @a[team=!hub] ["",{"text":"La tempête","bold":true,"color":"gold"},{"text":" vous donne ","bold":true,"color":"aqua"},{"text":"La Nausée","bold":true,"color":"dark_red"},{"text":" pendant 30 secondes !","bold":true,"color":"aqua"}]
 
 #----------------------------------------------------------------------

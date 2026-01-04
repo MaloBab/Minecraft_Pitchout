@@ -1,5 +1,5 @@
 execute as @a[team=!hub,distance=..40] run team join hub @s
-scoreboard players enable @a[team=hub] po.trigger.play
+scoreboard players enable @a[team=hub] play
 
 #---------------------------------------------------------------
 #reinitialisation joueurs et arene apres une parite
@@ -8,12 +8,12 @@ clear @a[team=hub,tag=finGame]
 tag @a[team=hub,tag=finGame] remove finGame
 
 execute positioned 300 48 100 as @e[type=chest_minecart,distance=200..] run kill @s
-execute store result score lifetime po.cd.cible run data get entity @e[type=pitchout:area_effect_cloud,tag=Cible,limit=1] Age 1
-execute if score lifetime po.cd.cible matches 605 run execute at @e[type=pitchout:area_effect_cloud,tag=Cible] run setblock ~ ~ ~ air replace
+execute store result score lifetime po.cd.cible run data get entity @e[type=minecraft:area_effect_cloud,tag=Cible,limit=1] Age 1
+execute if score lifetime po.cd.cible matches 605 run execute at @e[type=minecraft:area_effect_cloud,tag=Cible] run setblock ~ ~ ~ air replace
 
-effect give @a[team=hub] pitchout:resistance 2 9 true
-effect give @a[team=hub] pitchout:saturation 1 5 true
-effect give @a[team=hub] pitchout:speed 2 0 true
+effect give @a[team=hub] minecraft:resistance 2 9 true
+effect give @a[team=hub] minecraft:saturation 1 5 true
+effect give @a[team=hub] minecraft:speed 2 0 true
 scoreboard players set @a[team=hub] po.tech.remaining_lives 6
 effect clear @a[team=hub,tag=!build]
 scoreboard players set @a[team=hub] po.stat.sneak 0

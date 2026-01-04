@@ -1,11 +1,11 @@
 #desorientation
 
 execute as @a[scores={controle=1..}] run scoreboard players set @s timeCont 1
-execute as @a[scores={controle=1..}] run effect give @a[scores={controle=0}] pitchout:darkness 15 2 true
+execute as @a[scores={controle=1..}] run effect give @a[scores={controle=0}] minecraft:darkness 15 2 true
 execute as @a[scores={controle=1..}] run scoreboard players set @s controle 0
 
 execute as @a[scores={timeCont=1..}] run scoreboard players add @s timeCont 1
-execute as @a[scores={timeCont=1..}] run item replace entity @a[scores={timeCont=0}] armor.head with pitchout:carved_pumpkin
+execute as @a[scores={timeCont=1..}] run item replace entity @a[scores={timeCont=0}] armor.head with minecraft:carved_pumpkin
 
 execute as @a[scores={timeCont=140..}] run item replace entity @a armor.head with air
 execute as @a[scores={timeCont=140..}] run scoreboard players set @s timeCont 0
@@ -28,13 +28,13 @@ execute as @a[team=hub,scores={timeHunt=260..}] run scoreboard players set @s ti
 #---------------------------------------------------
 #intangibiite
 
-kill @e[type=pitchout:experience_bottle]
+kill @e[type=minecraft:experience_bottle]
 
 execute as @a[scores={intangibilite=1..}] run scoreboard players add @s intangibilite 1
-execute at @a[scores={intangibilite=2}] run summon pitchout:area_effect_cloud ~ ~ ~ {Duration:84,Tags:["Inverse"]}
+execute at @a[scores={intangibilite=2}] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:84,Tags:["Inverse"]}
 execute as @a[scores={intangibilite=2}] run gamemode spectator @s
 execute as @a[scores={intangibilite=80..}] run gamemode adventure @s
-execute as @a[scores={intangibilite=80..}] run execute at @e[type=pitchout:area_effect_cloud,tag=Inverse] run execute unless entity @a[tag=inverse] run tp @s ~ ~ ~
+execute as @a[scores={intangibilite=80..}] run execute at @e[type=minecraft:area_effect_cloud,tag=Inverse] run execute unless entity @a[tag=inverse] run tp @s ~ ~ ~
 
 execute at @a[scores={intangibilite=1..}] run execute as @e[scores={intangibilite=0},distance=0..1,limit=1] run tag @s add inverse
 execute at @e[tag=inverse] run gamemode adventure @a[scores={intangibilite=1..},distance=0..2]

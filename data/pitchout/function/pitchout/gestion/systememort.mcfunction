@@ -1,9 +1,9 @@
 #animation mort + mort rapide
 
-execute if score select map matches 1 run execute at @a[scores={position=12..17}] run particle pitchout:soul ~ 19 ~ 0.1 0.8 0.1 0.1 150 force
-execute if score select map matches 2 run execute at @a[scores={position=12..17}] run particle pitchout:soul ~ 49 ~ 0.1 0.8 0.1 0.1 150 force
-execute if score select map matches 3 run execute at @a[scores={position=12..17}] run particle pitchout:soul ~ 49 ~ 0.1 0.8 0.1 0.1 150 force
-execute if score select map matches 4 run execute at @a[scores={position=12..17}] run particle pitchout:soul ~ 49 ~ 0.1 0.8 0.1 0.1 150 force
+execute if score select map matches 1 run execute at @a[scores={position=12..17}] run particle minecraft:soul ~ 19 ~ 0.1 0.8 0.1 0.1 150 force
+execute if score select map matches 2 run execute at @a[scores={position=12..17}] run particle minecraft:soul ~ 49 ~ 0.1 0.8 0.1 0.1 150 force
+execute if score select map matches 3 run execute at @a[scores={position=12..17}] run particle minecraft:soul ~ 49 ~ 0.1 0.8 0.1 0.1 150 force
+execute if score select map matches 4 run execute at @a[scores={position=12..17}] run particle minecraft:soul ~ 49 ~ 0.1 0.8 0.1 0.1 150 force
 
 execute as @a[scores={position=12..17}] run kill @s
 

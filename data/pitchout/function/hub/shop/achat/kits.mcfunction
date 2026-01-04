@@ -1,15 +1,15 @@
 #affectation des scores
-execute as @a[scores={po.ui.kit_menu=2}] store result score @s po.shop.batisseur run clear @s pitchout:bricks
-execute as @a[scores={po.ui.kit_menu=2}] store result score @s po.shop.necromancien run clear @s pitchout:skeleton_po.shop.necromancien
-execute as @a[scores={po.ui.kit_menu=2}] store result score @s po.shop.chevalier run clear @s pitchout:iron_horse_armor
-execute as @a[scores={po.ui.kit_menu=2}] store result score @s po.shop.chaman run clear @s pitchout:glow_ink_sac
-execute as @a[scores={po.ui.kit_menu=2}] store result score @s po.shop.druide run clear @s pitchout:seagrass
-execute as @a[scores={po.ui.kit_menu=2}] store result score @s po.shop.fantome run clear @s pitchout:nether_star
-execute as @a[scores={po.ui.kit_menu=2}] store result score @s po.shop.murloc run clear @s pitchout:slime_ball
-execute as @a[scores={po.ui.kit_menu=2}] store result score @s po.shop.assassin run clear @s pitchout:black_dye
-execute as @a[scores={po.ui.kit_menu=2}] store result score @s po.shop.chasseur_gg run clear @s pitchout:spectral_arrow
-execute as @a[scores={po.ui.kit_menu=2}] store result score @s po.shop.maitre_m run clear @s pitchout:blaze_powder
-execute as @a[scores={po.ui.kit_menu=2}] store result score @s po.shop.ingenieur run clear @s pitchout:tripwire_hook
+execute as @a[scores={po.ui.kit_menu=2}] store result score @s po.shop.batisseur run clear @s minecraft:bricks
+execute as @a[scores={po.ui.kit_menu=2}] store result score @s po.shop.necromancien run clear @s minecraft:skeleton_skull
+execute as @a[scores={po.ui.kit_menu=2}] store result score @s po.shop.chevalier run clear @s minecraft:iron_horse_armor
+execute as @a[scores={po.ui.kit_menu=2}] store result score @s po.shop.chaman run clear @s minecraft:glow_ink_sac
+execute as @a[scores={po.ui.kit_menu=2}] store result score @s po.shop.druide run clear @s minecraft:seagrass
+execute as @a[scores={po.ui.kit_menu=2}] store result score @s po.shop.fantome run clear @s minecraft:nether_star
+execute as @a[scores={po.ui.kit_menu=2}] store result score @s po.shop.murloc run clear @s minecraft:slime_ball
+execute as @a[scores={po.ui.kit_menu=2}] store result score @s po.shop.assassin run clear @s minecraft:black_dye
+execute as @a[scores={po.ui.kit_menu=2}] store result score @s po.shop.chasseur_gg run clear @s minecraft:spectral_arrow
+execute as @a[scores={po.ui.kit_menu=2}] store result score @s po.shop.maitre_m run clear @s minecraft:blaze_powder
+execute as @a[scores={po.ui.kit_menu=2}] store result score @s po.shop.ingenieur run clear @s minecraft:tripwire_hook
 
 #---------------------------------------------------------------
 #achat necro

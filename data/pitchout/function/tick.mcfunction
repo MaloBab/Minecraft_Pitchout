@@ -1,18 +1,19 @@
-# ==========================================
-# PITCHOUT - MAIN LOOP (20Hz)
-# ==========================================
-# Seules les fonctions d'ordonnancement sont appelées ici.
-# Pas de logique lourde directement dans ce fichier.
+# ===============================================================
+# PITCHOUT - MAIN LOOP (20 ticks/seconde)
+# ===============================================================
 
-# 1. Gestion du Hub (Lobby)
+# 1. Timer Global (Sert pour tout le datapack)
+scoreboard players add $globalTimer po.tech 1
+
+# 2. GESTION DES ÉTATS (State Machine)
+
+# ÉTAT 0 : HUB (Lobby)
+# Si $gameState est à 0, on exécute la boucle du Hub
 execute if score $gameState po.main matches 0 run function pitchout:hub/tick
 
-# 2. Gestion du Jeu (In-Game)
-execute if score $gameState po.main matches 1 run function pitchout:game/tick
+# ÉTAT 1 : JEU (Partie en cours)
+# (Tu pourras activer cette ligne quand tu attaqueras la partie Game)
+# execute if score $gameState po.main matches 1 run function pitchout:game/tick
 
-# 3. Gestion de la Fin de partie
-execute if score $gameState po.main matches 2 run function pitchout:end/tick
-
-# 4. Timer Global
-# On incrémente un timer global pour les événements programmés
-scoreboard players add $globalTimer po.main 1
+# ÉTAT 2 : FIN (Podium / Reset)
+# execute if score $gameState po.main matches 2 run function pitchout:end/tick

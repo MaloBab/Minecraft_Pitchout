@@ -111,7 +111,7 @@ execute as @a[team=hub,scores={po.tech.game_set=4}] run scoreboard players set @
 execute as @a[team=hub,scores={po.tech.game_set=4}] run scoreboard players set @s po.model.pelle4 0
 execute as @a[team=hub,scores={po.tech.game_set=4}] run scoreboard players set @s po.model.pelle5 0
 execute as @a[team=hub,scores={po.tech.game_set=4}] run scoreboard players set @s po.shovel.stone 0
-execute as @a[team=hub,scores={po.tech.game_set=4}] run scoreboard players set @s po.trigger.play 0
+execute as @a[team=hub,scores={po.tech.game_set=4}] run scoreboard players set @s play 0
 execute as @a[team=hub,scores={po.tech.game_set=4}] run scoreboard players set @s po.use.liengod 0
 execute as @a[team=hub,scores={po.tech.game_set=4}] run scoreboard players set @s po.cd.lien 0
 execute as @a[team=hub,scores={po.tech.game_set=4}] run scoreboard players set @s po.timer.playertimer 0
