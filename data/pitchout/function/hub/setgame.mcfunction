@@ -6,8 +6,8 @@ execute as @s[scores={po.tech.game_set=1}] run advancement grant @s through mine
 execute as @s[scores={po.tech.game_set=1}] run advancement grant @s through minecraft:husbandry/root
 execute as @s[scores={po.tech.game_set=1}] run advancement grant @s through minecraft:story/root
 execute as @s[scores={po.tech.game_set=1}] run advancement grant @s through minecraft:nether/root
-execute as @s[scores={po.tech.game_set=1}] run advancement revoke @s through pitchout:maitrise/root
-execute as @s[scores={po.tech.game_set=1}] run advancement revoke @s through pitchout:hautfait/root
+#execute as @s[scores={po.tech.game_set=1}] run advancement revoke @s through pitchout:maitrise/root
+#execute as @s[scores={po.tech.game_set=1}] run advancement revoke @s through pitchout:hautfait/root
 
 execute as @a[team=hub,scores={po.tech.game_set=1}] run scoreboard players set @s po.ui.map_menu 0
 execute as @a[team=hub,scores={po.tech.game_set=1}] run scoreboard players set @s po.use.fate_inverse 0
@@ -85,7 +85,6 @@ execute as @a[team=hub,scores={po.tech.game_set=2}] run scoreboard players set @
 execute as @a[team=hub,scores={po.tech.game_set=2}] run scoreboard players set @s po.use.phantom 0
 execute as @a[team=hub,scores={po.tech.game_set=2}] run scoreboard players set @s po.kit.fantome 0
 execute as @a[team=hub,scores={po.tech.game_set=2}] run scoreboard players set @s po.shovel.iron 0
-execute as @a[team=hub,scores={po.tech.game_set=2}] run scoreboard players set @s po.use.rod 0
 execute as @a[team=hub,scores={po.tech.game_set=2}] run scoreboard players set @s po.use.ender_pearl 0
 execute as @a[team=hub,scores={po.tech.game_set=2}] run scoreboard players set @s po.tech.void_pearl 0
 execute as @a[team=hub,scores={po.tech.game_set=2}] run scoreboard players set @s po.tech.save 0
@@ -114,7 +113,6 @@ execute as @a[team=hub,scores={po.tech.game_set=4}] run scoreboard players set @
 execute as @a[team=hub,scores={po.tech.game_set=4}] run scoreboard players set @s play 0
 execute as @a[team=hub,scores={po.tech.game_set=4}] run scoreboard players set @s po.use.liengod 0
 execute as @a[team=hub,scores={po.tech.game_set=4}] run scoreboard players set @s po.cd.lien 0
-execute as @a[team=hub,scores={po.tech.game_set=4}] run scoreboard players set @s po.timer.playertimer 0
 execute as @a[team=hub,scores={po.tech.game_set=4}] run scoreboard players set @s po.use.protect 0
 execute as @a[team=hub,scores={po.tech.game_set=4}] run scoreboard players set @s po.misc.grav 0
 execute as @a[team=hub,scores={po.tech.game_set=4}] run scoreboard players set @s po.legacy.cfleche 0

@@ -26,6 +26,7 @@ execute positioned 300 48 100 as @a[distance=..200] at @s if entity @s[y=40,dy=-
 
 # Gestion des Menus / Raycasting / Actionbar
 # 1. Gestion Générale & Ambiance
+
 function pitchout:hub/main_hub
 function pitchout:hub/titres
 function pitchout:hub/livres

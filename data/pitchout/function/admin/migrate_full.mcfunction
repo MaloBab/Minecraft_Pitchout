@@ -111,12 +111,7 @@ scoreboard players set Askepios po.tech.remaining_lives 5
 scoreboard players set Browis po.tech.remaining_lives 5
 scoreboard players set .. po.tech.remaining_lives -1
 scoreboard players set ------------- po.tech.remaining_lives -2
-# PlayerTimer -> po.timer.playertimer (dummy)
-scoreboard objectives add po.timer.playertimer dummy
-scoreboard players set Babiblaster po.timer.playertimer 0
-scoreboard players set Archibald po.timer.playertimer 0
-scoreboard players set Askepios po.timer.playertimer 0
-scoreboard players set Browis po.timer.playertimer 0
+
 # nbconnection -> po.stat.joins (dummy)
 scoreboard objectives add po.stat.joins dummy
 scoreboard players set Babiblaster po.stat.joins 6
@@ -168,12 +163,7 @@ scoreboard players set Babiblaster po.use.familiar 0
 scoreboard players set Archibald po.use.familiar 0
 scoreboard players set Askepios po.use.familiar 0
 scoreboard players set Browis po.use.familiar 0
-# fishing -> po.use.rod (minecraft.used:minecraft.fishing_rod)
-scoreboard objectives add po.use.rod minecraft.used:minecraft.fishing_rod
-scoreboard players set Babiblaster po.use.rod 0
-scoreboard players set Archibald po.use.rod 0
-scoreboard players set Askepios po.use.rod 0
-scoreboard players set Browis po.use.rod 0
+
 # balise -> po.tech.balise (dummy)
 scoreboard objectives add po.tech.balise dummy
 scoreboard players set 20 po.tech.balise 20
@@ -371,8 +361,6 @@ scoreboard players set Babiblaster po.use.levitation 0
 scoreboard players set Archibald po.use.levitation 0
 scoreboard players set Askepios po.use.levitation 0
 scoreboard players set Browis po.use.levitation 0
-# testfish -> po.misc.testfish (minecraft.used:minecraft.fishing_rod)
-scoreboard objectives add po.misc.testfish minecraft.used:minecraft.fishing_rod
 # victoires -> po.win.toires (dummy)
 scoreboard objectives add po.win.total dummy
 scoreboard players set Babiblaster po.win.total 12

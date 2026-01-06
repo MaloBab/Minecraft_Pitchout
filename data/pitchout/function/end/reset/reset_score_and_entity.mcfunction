@@ -15,6 +15,13 @@ scoreboard players set @a po.cd.lien 0
 scoreboard players set @a po.use.pearl_game 0
 execute as @a[team=!Chasseur] run scoreboard players set @s po.cd.arbalete 0 
 
+scoreboard players set @a po.use.levitation 0
+scoreboard players set @a po.legacy.creeper 0
+scoreboard players set @a po.use.shield_cookie 0
+scoreboard players set @a po.use.crossbow_arti 0
+scoreboard players set @a po.tech.invulnerable 0
+scoreboard players set @a po.legacy.rocket 0
+
 scoreboard players set @a po.tech.remaining_lives 6
 
 execute as @e[type=minecraft:armor_stand,tag=Select] run scoreboard players reset @s po.timer.plan

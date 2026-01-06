@@ -15,8 +15,6 @@ execute as @a[scores={po.use.ender_pearl=0,po.tech.void_pearl=1..}] run execute 
 #--------------------------------------------------------------------------------------------
 
 #Cowboy !
-execute as @a[scores={po.use.rod=0},tag=grap] run scoreboard players add @s po.legacy.grapranger 1
-execute as @a[scores={po.use.rod=0},tag=grap] run tag @s remove grap
 
 #--------------------------------------------------------------------------------------------
 

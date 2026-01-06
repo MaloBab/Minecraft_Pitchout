@@ -22,6 +22,3 @@ execute store result score lifetime po.cd.cible run data get entity @e[type=mine
 execute if score lifetime po.cd.cible matches 605 run execute at @e[type=minecraft:area_effect_cloud,tag=Cible] run setblock ~ ~ ~ air replace
 scoreboard players set @a[team=hub] po.legacy.qtb 16
 scoreboard players set @a[team=hub] po.use.build_wand 0
-
-tag @a[team=hub] remove mort
-tag @a[team=hub] remove victoire

@@ -1,14 +1,5 @@
-#animation mort + mort rapide
-
-execute if score select po.map.vote_id matches 1 run execute at @a[scores={po.tech.pos_hp=12..17}] run particle minecraft:soul ~ 19 ~ 0.1 0.8 0.1 0.1 150 force
-execute if score select po.map.vote_id matches 2 run execute at @a[scores={po.tech.pos_hp=12..17}] run particle minecraft:soul ~ 49 ~ 0.1 0.8 0.1 0.1 150 force
-execute if score select po.map.vote_id matches 3 run execute at @a[scores={po.tech.pos_hp=12..17}] run particle minecraft:soul ~ 49 ~ 0.1 0.8 0.1 0.1 150 force
-execute if score select po.map.vote_id matches 4 run execute at @a[scores={po.tech.pos_hp=12..17}] run particle minecraft:soul ~ 49 ~ 0.1 0.8 0.1 0.1 150 force
-
-execute as @a[scores={po.tech.pos_hp=12..17}] run kill @s
-
-#-----------------------------------------------------------------
 #detection vie
+
 execute if entity @a[scores={po.legacy.detectmort=1..,po.legacy.aggronaga=1..}] run execute as @e[type=zombified_piglin,scores={po.legacy.aggronaga=1..}] run execute if score @s po.legacy.aggronaga = @a[scores={po.legacy.aggronaga=1..,po.legacy.detectmort=1..},limit=1] po.legacy.aggronaga run kill @s
 
 execute as @a[scores={po.legacy.detectmort=1..}] run scoreboard players add @s po.tech.global_timer 1

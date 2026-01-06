@@ -1,5 +1,3 @@
-effect give @a[team=naga] dolphins_grace 2 250 true
-
 #Trident
 
 execute as @e[type=trident] store result score @s po.use.trident run data get entity @s shake 1

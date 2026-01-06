@@ -1,0 +1,16 @@
+function pitchout:game/kits/ranger/main
+function pitchout:game/kits/forestier/main
+function pitchout:game/kits/mage/main
+function pitchout:game/kits/guerrier/main
+function pitchout:game/kits/necromancien/main
+function pitchout:game/kits/chevalier/main
+function pitchout:game/kits/chaman/main
+function pitchout:game/kits/druide/main
+function pitchout:game/kits/fantome/main
+function pitchout:game/kits/murloc/main
+function pitchout:game/kits/batisseur/main
+function pitchout:game/kits/assassin/main
+function pitchout:game/kits/chasseur/main
+function pitchout:game/kits/maitre_mirroir/main
+function pitchout:game/kits/ingenieur/main
+function pitchout:game/kits/naga/main

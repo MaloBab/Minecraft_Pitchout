@@ -8,8 +8,6 @@ kill @e[type=chest_minecart]
 kill @e[type=item]
 title @a clear
 
-# 2. Initialisation des Joueurs
-# On retire les items du Hub
 clear @a[team=hub]
 effect clear @a[team=hub]
 
@@ -17,16 +15,13 @@ effect clear @a[team=hub]
 scoreboard players set @a po.tech.remaining_lives 6
 scoreboard players set @a po.legacy.detectmort 1
 scoreboard players set @a po.stat.deaths_match 0
+title @a times 0 80 0
 
 
-# 4. Téléportation vers l'Arène (Gestion Map)
-# J'ai isolé ça dans une sous-fonction pour ne pas polluer ce fichier
 function pitchout:game/map/teleport_players
+function pitchout:game/kits/attribution_team
 
-# 5. Changement d'État (CRUCIAL)
-# On passe en mode JEU (1). Le fichier game/tick.mcfunction prend le relais.
+
 scoreboard players set $gameState po.main 1
-
-# 6. Reset du Timer Global
-# On remet le chronomètre à 0 pour le début de partie
 scoreboard players set $globalTimer po.tech 0
+scoreboard players set debut po.tech.global_timer 0

@@ -5,7 +5,6 @@ execute at @e[type=bee] run execute as @a[distance=..7,gamemode=adventure] run e
 
 execute at @a[team=forestier,scores={po.use.familiar=2..}] run execute at @a[limit=1,scores={po.use.familiar=0},gamemode=adventure,sort=random] run summon minecraft:bee ~4 ~1 ~1 {Health:15,Glowing:1b,Silent:1b,active_effects:[{id:wither,duration:-1,amplifier:1,show_particles:0b}],attributes:[{id:"generic.knockback_resistance",base:0.8f},{id:"generic.max_health",base:15f}]}
 execute as @a[team=forestier,scores={po.use.familiar=2..}] run scoreboard players set @s po.use.familiar 0
-
 #pas de l'ombre
 execute as @a[scores={po.use.spyglass_tp=1..}] run tag @s add tp
 execute if entity @a[scores={po.use.spyglass_tp=1..}] run execute as @r[scores={po.use.spyglass_tp=0},gamemode=adventure,limit=1] run tag @s add tp

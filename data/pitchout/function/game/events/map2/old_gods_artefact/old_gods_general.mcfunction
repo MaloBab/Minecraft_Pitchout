@@ -1,4 +1,7 @@
 #-------------------------------------- ANNONCE & PARTICULES --------------------------------------------
+
+function pitchout:game/events/map2/old_gods_artefact/item_management
+
 execute as @e[type=area_effect_cloud,tag=OTV] store result score @s po.tech.global_timer run data get entity @s Age
 execute unless entity @a[team=!hub] run scoreboard players set objet po.tech.global_timer 0
 execute if score select po.map.vote_id matches 2 if score eventPartie po.legacy.eventtype matches 5 if entity @a[team=!hub,gamemode=!creative] run scoreboard players add objet po.tech.global_timer 1

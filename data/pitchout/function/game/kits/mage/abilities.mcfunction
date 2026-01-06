@@ -15,7 +15,6 @@ execute as @a[scores={po.legacy.creeper=41..}] run scoreboard players set @s po.
 
 #artefacts
 
-
 execute as @a[team=mage,scores={po.stat.sneak=1..}] run scoreboard players set @s po.stat.sneak 1
 execute as @a[team=mage,scores={po.misc.grav=0}] run scoreboard players set @s po.stat.sneak 0
 

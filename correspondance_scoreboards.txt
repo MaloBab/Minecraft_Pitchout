@@ -19,7 +19,6 @@ menu -> po.ui.kit_menu
 randomXal -> po.legacy.randomxal
 lifeTourelle -> po.tech.life_turret
 vie -> po.tech.remaining_lives
-PlayerTimer -> po.timer.playertimer
 nbconnection -> po.stat.joins
 sonEnder1 -> po.sound.enderpearl1
 medaillon -> po.misc.medaillon
@@ -31,7 +30,6 @@ cristalVie -> po.use.life_crystal
 charge -> po.use.charge
 kit -> po.state.kit_id
 familier -> po.use.familiar
-fishing -> po.use.rod
 balise -> po.tech.balise
 couche -> po.tech.layer
 controle -> po.use.control
@@ -63,7 +61,6 @@ timeRaz -> po.cd.raz
 equipEnder -> po.cos.equipender
 chasseurGG -> po.kit.chasseurgg
 levi -> po.use.levitation
-testfish -> po.misc.testfish
 victoires -> po.win.total
 timeWater -> po.tech.water_timer
 batisseur -> po.kit.batisseur
