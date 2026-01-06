@@ -1,3 +1,6 @@
+execute if score select po.map.vote_id matches 2 run fill 648 37 161 544 84 37 air replace minecraft:water
+execute if score select po.map.vote_id matches 2 run fill 648 37 161 544 84 37 air replace minecraft:structure_void
+
 execute if entity @a[tag=victoire] run fill 68 -16 70 -47 55 -53 minecraft:air replace minecraft:honey_block
 execute if entity @a[tag=victoire] run fill 68 6 70 -47 55 -53 minecraft:air replace minecraft:note_block
 execute if entity @a[tag=victoire] run fill 68 6 70 -47 55 -53 minecraft:air replace minecraft:bricks

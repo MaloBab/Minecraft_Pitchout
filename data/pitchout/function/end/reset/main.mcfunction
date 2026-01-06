@@ -1,0 +1,2 @@
+function pitchout:end/reset/reset_score_and_entity
+function pitchout:end/reset/reset_blocks

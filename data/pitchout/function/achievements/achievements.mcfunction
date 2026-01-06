@@ -22,7 +22,7 @@ execute as @a[scores={po.use.rod=0},tag=grap] run tag @s remove grap
 
 #Du danger ? Quel danger ?
 
-execute if score timer po.win.detectwin matches 29 run execute as @a[tag=victoire,team=ranger,scores={po.use.pearl_game=0}] run scoreboard players add @s po.adv.dudanger 1
+execute if score $gameState po.main matches 2 if score $globalTimer po.tech matches 2 as @a[tag=victoire,team=ranger,scores={po.use.pearl_game=0, po.tech.remaining_lives=5}] run scoreboard players add @s po.adv.dudanger 1
 
 #--------------------------------------------------------------------------------------------
 #Teleportation !

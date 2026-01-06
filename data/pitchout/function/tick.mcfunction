@@ -15,4 +15,4 @@ execute if score $gameState po.main matches 0 run function pitchout:hub/tick
  execute if score $gameState po.main matches 1 run function pitchout:game/tick
 
 # ÉTAT 2 : FIN (Podium / Reset)
-# execute if score $gameState po.main matches 2 run function pitchout:end/tick
+execute if score $gameState po.main matches 2 run function pitchout:end/tick

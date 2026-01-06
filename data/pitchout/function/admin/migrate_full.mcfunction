@@ -944,7 +944,7 @@ scoreboard players set Browis po.use.ender_pearl 0
 # timeObjA -> po.cd.obj_angelique (dummy)
 scoreboard objectives add po.cd.obj_angelique dummy
 scoreboard players set timer po.cd.obj_angelique 0
-scoreboard players set hotel po.cd.obj_angelique 0
+scoreboard players set autel po.cd.obj_angelique 0
 # diamant -> po.shovel.diamond (dummy)
 scoreboard objectives add po.shovel.diamond dummy
 scoreboard players set Babiblaster po.shovel.diamond 0

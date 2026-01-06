@@ -1,4 +1,9 @@
-execute if entity @a[tag=victoire] run scoreboard players add @a[team=!hub] po.stat.games_played 1
+execute as @a[tag=victoire] run scoreboard players add @s po.coins 25
+
+execute as @a[tag=victoire] run scoreboard players add @s po.stat.games_played 1
+execute as @a[tag=mort] run scoreboard players add @s po.stat.games_played 1
+execute as @a[tag=victoire] run scoreboard players add @s po.win.total 1
+
 execute as @a[tag=victoire,team=ranger] run scoreboard players add @s po.win.ranger 1
 execute as @a[tag=victoire,team=forestier] run scoreboard players add @s po.win.forestier 1
 execute as @a[tag=victoire,team=mage] run scoreboard players add @s po.win.mage 1
