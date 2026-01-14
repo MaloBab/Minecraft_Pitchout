@@ -24,6 +24,9 @@ effect give @a minecraft:instant_health 1 255 true
 # Détection de chute
 execute positioned 300 48 100 as @a[distance=..200] at @s if entity @s[y=40,dy=-40] run tp @s 300 48 100
 
+execute if score $gameState po.main matches 0 if entity @a[team=!hub] run tp @a[team=!hub] 300 48 100
+
+
 # Gestion des Menus / Raycasting / Actionbar
 # 1. Gestion Générale & Ambiance
 

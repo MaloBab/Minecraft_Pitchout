@@ -27,8 +27,6 @@ execute as @a[scores={po.tech.remaining_lives=3}] run item replace entity @s hot
 execute as @a[scores={po.tech.remaining_lives=2}] run item replace entity @s hotbar.8 with minecraft:redstone 2
 execute as @a[scores={po.tech.remaining_lives=1}] run item replace entity @s hotbar.8 with minecraft:redstone 1
 
-execute as @a[scores={po.legacy.detectmort=1..,po.tech.global_timer=3..},team=!ingenieur] run clear @s
-
 #--------------------------------------------------------------
 #reset inventaire flèche + livre
 

@@ -3,7 +3,8 @@
 # =================================================================
 tellraw @a[tag=admin] ["",{"text":"[Pitchout] ","color":"gold"},{"text":"Migration massive en cours...","color":"yellow"}]
 
-
+scoreboard objectives add po.use.fishing_rod minecraft.used:minecraft.fishing_rod
+scoreboard objectives add po.timer.fishing_timer dummy
 # advBarroud -> po.adv.barroud (dummy)
 scoreboard objectives add po.adv.barroud dummy
 scoreboard players set Babiblaster po.adv.barroud 0

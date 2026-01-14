@@ -2,16 +2,10 @@
 # BOUCLE DE JEU (State 1)
 # ===============================================================
 
-# 1. Cœur du jeu
 function pitchout:game/core/general
+function pitchout:game/events/tick
+function pitchout:game/map/void_detection
 function pitchout:game/core/death
+function pitchout:game/kits/tick_all
 function pitchout:game/core/check_win
 
-# 2. Gestion de l'Arène
-function pitchout:game/map/void_detection
-
-# 3. Kits & Compétences
-function pitchout:game/kits/tick_all
-
-# 4. Événements (Colis, Tempêtes)
-function pitchout:game/events/tick
